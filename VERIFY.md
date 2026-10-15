@@ -25,7 +25,7 @@ Final publication updates only evidence/status labels. Its exact revision and de
 
 ## Pixel-art project hub iteration — 2026-10-15
 
-Scope is the information site and curated Pages output only; S1 application development remains unstarted. The focused source branch starts at `0d6b0f29c8c1387cca14588455a2a06937da6c4e`. Local preview builds label a dirty tree `local-uncommitted`; CI/live builds retain their exact source SHA. A PR/main merge is required before public Pages changes.
+Scope is the information site and curated Pages output only; S1 application development remains unstarted. The focused source branch starts at `0d6b0f29c8c1387cca14588455a2a06937da6c4e`; implementation commit is `8dd5822882be4d8493491be9c205ce7c3bf09b87` before this evidence/hand-off follow-up. Local preview builds label a dirty tree `local-uncommitted`; clean, CI and live builds retain their exact source SHA. A PR/main merge is required before public Pages changes.
 
 ### Reference research and design choices
 

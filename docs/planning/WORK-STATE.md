@@ -6,7 +6,7 @@ Task recorded 2026-10-15 before implementation. Scope: replace the long foundati
 
 Writer: coordinator/implementation engineer in Codex desktop, working alone on source and documents. No source ownership transfer is in progress. Client/model route has not changed.
 
-Source root: the `project-foundation-new-project` folder in the RPO-HUB checkout. Starting revision: `0d6b0f29c8c1387cca14588455a2a06937da6c4e`; branch: `feat/pixel-art-community-hub`; origin: `https://github.com/killacalione/RPO-HUB.git`. The checkout was clean before creating the focused branch; task changes are currently uncommitted, and `dist/release.json` correctly labels the local source `local-uncommitted`. Runtime observed: Node `v25.9.0`, npm `11.12.1`, PowerShell `7.6.5`; package requires Node 24 or newer and no dependency was added.
+Source root: the `project-foundation-new-project` folder in the RPO-HUB checkout. Starting revision: `0d6b0f29c8c1387cca14588455a2a06937da6c4e`; implementation commit: `8dd5822882be4d8493491be9c205ce7c3bf09b87`; branch: `feat/pixel-art-community-hub`; origin: `https://github.com/killacalione/RPO-HUB.git`. The implementation is committed locally; a follow-up evidence/hand-off commit will update this ledger. Runtime observed: Node `v25.9.0`, npm `11.12.1`, PowerShell `7.6.5`; package requires Node 24 or newer and no dependency was added.
 
 Owned/changed files: `VERIFY.md`, `data/project-status.json`, this ledger, `docs/project/Architecture.md`, `docs/project/DESIGN_SYSTEM.md`, `docs/project/testing.md`, `scripts/build-site.mjs`, `scripts/check-foundation.mjs`, `scripts/serve.mjs`, `site/app.js`, `site/portal-world.svg`, `site/site-content.json`, `site/styles.css`.
 
@@ -21,7 +21,7 @@ Decisions retained: no framework/dependencies or remote visual assets; original 
 
 Unverified/blockers: REA's local controlled browser capture did not return after two bounded attempts; no REA result is claimed for the built site. The available in-app browser already requested reduced motion, so the no-preference pause/resume click path could not be exercised. Physical devices, assistive technology, other engines and this branch's Actions/live Pages deployment remain unverified. These do not block a review PR; no public rollout is claimed.
 
-Next concrete step: commit the verified task branch, push it and open a review PR; wait for its Node 24 checks and leave merge/deployment to the maintainer.
+Next concrete step: finish the post-commit evidence checkpoint, push the branch and open a review PR; wait for its Node 24 checks and leave merge/deployment to the maintainer.
 
 ---
 
