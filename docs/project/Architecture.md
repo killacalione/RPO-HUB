@@ -2,7 +2,7 @@
 
 ## Current foundation
 
-One canonical repository contains maintained project documents, generic role adapters, contribution guidance, a structured status file and a dependency-free static-site generator. `data/project-status.json` is the public status source; `npm run build` emits only curated HTML/CSS and source-revision metadata into ignored `dist/`. PR CI validates; trusted main builds deploy via GitHub Pages. There is no application backend, database, authentication or remote agent dependency.
+One canonical repository contains maintained project documents, generic role adapters, contribution guidance, structured project/site copy and a dependency-free static-site generator. `data/project-status.json` is the public progress source; `npm run build` renders five static routes plus same-origin CSS, a small session-preference controller, a hand-authored inline SVG scene and source-revision metadata into ignored `dist/`. PR CI validates generated routes and local links; trusted main builds deploy only curated `dist/` through GitHub Pages. The site has no application backend, database, authentication, analytics or remote asset dependency.
 
 ## Proposed application boundaries
 

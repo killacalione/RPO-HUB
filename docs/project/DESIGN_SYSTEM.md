@@ -1,6 +1,8 @@
 # Design system
 
-The foundation site is a readable project workbench: warm neutral background, dark text, restrained blue accent, clear evidence labels and accessible links. Lead with current stage, then work/roadmap, contribution entry points and source revision. Use native HTML landmarks, logical headings, visible focus, adequate contrast, reflow and reduced-motion defaults. No telemetry, visual progress percentages or fabricated activity.
+The foundation site is a colorful, original pixel-art project map with five static routes: Home, Project, Progress, Roadmap and Community. Sunset Portal is the default; Arcade Night and Handheld Meadow are selectable per browser-tab session. Detail pages use the same navigation and theme controls. The map is a concept illustration, not a playable world. Keep current stage and evidence visible, and describe future capabilities as aspirations until implemented.
+
+Use native HTML landmarks, logical headings, readable system fonts, visible keyboard focus, adequate contrast, reflow and a Home layout that fits typical desktop and phone viewports while allowing overflow at small sizes or zoom. Motion is gentle, has a visible pause control and follows `prefers-reduced-motion`; do not flash or rely on movement for meaning. The artwork and CSS are original local sources; reference projects informed pixel-style controls and motion patterns but supply no assets or required runtime dependencies. No telemetry, visual progress percentages or fabricated activity.
 
 For S1, the selected loop is explore/personalize/portal travel. Provide trusted Return home and Stop, visible saving/failed states, accessible diagnostics and keyboard alternatives. Essential actions need non-spatial equivalents; color, sound, depth, motion or reaction speed cannot be the only route. Browser and local coding are both required; desktop Monaco is a candidate and does not prove mobile coding support.
 

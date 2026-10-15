@@ -1,0 +1,23 @@
+{
+  "home": {
+    "intro": "A community-built hub for creating, personalizing, and exploring code-created worlds — with connection as a future part of the journey.",
+    "now": "Today: building the shared foundation, in public."
+  },
+  "project": {
+    "pillars": [
+      {"title": "Create", "detail": "World makers shape spaces with code and share ideas through an open, versioned project format."},
+      {"title": "Personalize", "detail": "Visitors make approved choices that belong to their own saved experience, not the shared world template."},
+      {"title": "Explore", "detail": "Travel between imaginative places is the first proposed demo loop. Community features come later, after their boundaries are proven."}
+    ],
+    "next": "The proposed next milestone is a deliberately small local prototype: one project contract, a pair of original scenes, a safe interpreted-script boundary, and recoverable personalization. The S1 brief records its acceptance tests; implementation has not started."
+  },
+  "progress": {
+    "intro": "The project is at its community-foundation stage. Here is the work that has evidence today, with source links you can inspect."
+  },
+  "roadmap": {
+    "intro": "RPO HUB has a wide ambition. The roadmap keeps the next testable outcome visible without inventing dates, percentages, or finished capabilities."
+  },
+  "community": {
+    "intro": "RPO HUB is being shaped in public, one careful step at a time. You can help without signing up for an application that does not exist yet."
+  }
+}
