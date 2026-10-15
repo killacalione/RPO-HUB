@@ -1,0 +1,6 @@
+# Owner-led review. Add real maintainers only after they accept responsibility.
+* @killacalione
+/.github/ @killacalione
+/SECURITY.md @killacalione
+/GOVERNANCE.md @killacalione
+/LICENSE @killacalione

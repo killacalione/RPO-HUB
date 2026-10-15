@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "project": "RPO HUB",
+  "updated": "2026-10-15",
+  "stage": "Community foundation",
+  "summary": "A community-built hub of code-created worlds. We are establishing the project, its requirements and contribution process before building the application.",
+  "repository": "https://github.com/killacalione/RPO-HUB",
+  "currentWork": [
+    {"title": "One project, one source of truth", "state": "implemented", "detail": "Two planning packages consolidated by content, with earlier requirements preserved and original inputs archived locally.", "evidence": "docs/provenance/MERGE-REPORT.md"},
+    {"title": "A place to contribute", "state": "implemented", "detail": "Public source, contributor guidance, conduct, governance and private security reporting configuration.", "evidence": "CONTRIBUTING.md"},
+    {"title": "Progress that follows the source", "state": "implemented", "detail": "Reviewed status data generates this site. Main-branch Actions publishes it with its source revision.", "evidence": "docs/project/Architecture.md"}
+  ],
+  "milestones": [
+    {"id": "F0", "title": "Community foundation", "state": "implemented", "detail": "Repository, project documents, contributor workflow and progress site."},
+    {"id": "S1", "title": "Create, personalize, travel", "state": "planned", "detail": "Local/browser coding, interpreted world scripts, two original scenes and recoverable local saves."},
+    {"id": "S2", "title": "Shared rooms and text", "state": "planned", "detail": "Authoritative state, membership and tested access boundaries."},
+    {"id": "S3", "title": "Proximity and party voice", "state": "planned", "detail": "Media lifecycle, routing, resource limits and forbidden-delivery tests."},
+    {"id": "S4", "title": "Trusted world publishing", "state": "planned", "detail": "Validated immutable releases, revocation, rollback and quarantine."},
+    {"id": "S5", "title": "Public readiness", "state": "blocked", "detail": "Eligibility, privacy, rights, real-device evidence and sustainable operations must be established."}
+  ],
+  "contributionAreas": [
+    {"title": "Research", "detail": "Verify assumptions using primary sources and make the tradeoffs clear."},
+    {"title": "Accessibility", "detail": "Review journeys, keyboard alternatives, errors and readable project information."},
+    {"title": "Architecture", "detail": "Help define small, testable SDK and runtime boundaries before implementation."},
+    {"title": "Documentation", "detail": "Improve acceptance criteria, contributor onboarding and evidence quality."}
+  ],
+  "limits": "No application, public accounts, multiplayer or voice service is available yet. Planned features and research do not establish release, device, security or child-safety readiness."
+}

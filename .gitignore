@@ -1,0 +1,28 @@
+# Local preservation and private working evidence
+.local/
+.agents/
+# Original nested source is removed only after verified consolidation.
+/project-foundation-new-project/
+# Legacy imported material stays local pending its own redistribution review.
+/prototype/
+/RPO-HUB-MASTER-DESIGN.md
+node_modules/
+dist/
+artifacts/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+# Publish only the seven project agent adapters, never local configuration.
+.codex/*
+!.codex/agents/
+.codex/agents/*
+!.codex/agents/product-planner.toml
+!.codex/agents/design-system-specialist.toml
+!.codex/agents/architecture-data-specialist.toml
+!.codex/agents/security-reviewer.toml
+!.codex/agents/implementation-engineer.toml
+!.codex/agents/qa-release-reviewer.toml
+!.codex/agents/documentation-researcher.toml

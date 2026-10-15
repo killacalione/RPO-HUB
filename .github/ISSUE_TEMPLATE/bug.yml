@@ -1,0 +1,26 @@
+name: Defect or research gap
+description: Report a reproducible problem or unsupported claim.
+title: '[Issue] '
+labels: ['triage']
+body:
+  - type: markdown
+    attributes:
+      value: For security concerns use private vulnerability reporting. Keep personal or sensitive information out of this form.
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed problem
+      description: Include a page/file/revision and reproduction or primary-source evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant environment or limitations
+      description: Share only non-sensitive versions and context.

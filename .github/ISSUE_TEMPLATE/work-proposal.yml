@@ -1,0 +1,29 @@
+name: Scoped work proposal
+description: Propose an outcome with clear boundaries and acceptance criteria.
+title: '[Proposal] '
+labels: ['proposal']
+body:
+  - type: markdown
+    attributes:
+      value: Read the contribution guide first. Never include credentials, personal identity information or child/user data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and relevant requirements
+      description: Link recorded decisions, research or related discussions.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome and boundaries
+      description: Include primary sources, alternatives and what this task leaves for later.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance and evidence
+      description: What observable result would make this complete?
+    validations:
+      required: true
