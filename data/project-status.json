@@ -6,12 +6,12 @@
   "summary": "A community-built hub of code-created worlds. We are establishing the project, its requirements and contribution process before building the application.",
   "repository": "https://github.com/killacalione/RPO-HUB",
   "currentWork": [
-    {"title": "One project, one source of truth", "state": "implemented", "detail": "Two planning packages consolidated by content, with earlier requirements preserved and original inputs archived locally.", "evidence": "docs/provenance/MERGE-REPORT.md"},
-    {"title": "A place to contribute", "state": "implemented", "detail": "Public source, contributor guidance, conduct, governance and private security reporting configuration.", "evidence": "CONTRIBUTING.md"},
-    {"title": "Progress that follows the source", "state": "implemented", "detail": "Reviewed status data generates this site. Main-branch Actions publishes it with its source revision.", "evidence": "docs/project/Architecture.md"}
+    {"title": "One project, one source of truth", "state": "verified", "detail": "Two planning packages consolidated by content, with earlier requirements preserved and original inputs archived locally.", "evidence": "docs/provenance/MERGE-REPORT.md"},
+    {"title": "A place to contribute", "state": "verified", "detail": "Public source, contributor guidance, conduct, governance, Discussions and private security reporting are available.", "evidence": "CONTRIBUTING.md"},
+    {"title": "Progress that follows the source", "state": "verified", "detail": "Reviewed status data generates this site. Main-branch validation and Pages deployment passed with matching live source metadata.", "evidence": "VERIFY.md"}
   ],
   "milestones": [
-    {"id": "F0", "title": "Community foundation", "state": "implemented", "detail": "Repository, project documents, contributor workflow and progress site."},
+    {"id": "F0", "title": "Community foundation", "state": "verified", "detail": "Repository, project documents, contributor workflow and progress site."},
     {"id": "S1", "title": "Create, personalize, travel", "state": "planned", "detail": "Local/browser coding, interpreted world scripts, two original scenes and recoverable local saves."},
     {"id": "S2", "title": "Shared rooms and text", "state": "planned", "detail": "Authoritative state, membership and tested access boundaries."},
     {"id": "S3", "title": "Proximity and party voice", "state": "planned", "detail": "Media lifecycle, routing, resource limits and forbidden-delivery tests."},
