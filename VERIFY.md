@@ -12,7 +12,7 @@ Input archive equality and merge counts are documented in [consolidation evidenc
 
 ## The Oasis foundation closeout — 2026-10-16
 
-The source is being reviewed on `docs/the-oasis-foundation` at base revision `2a8aa57c4dd906d5126aa76a4bf0ccfaddd2db2f`, with origin `https://github.com/killacalione/The-Oasis.git`. Repository rename and main protection were already verified against GitHub. This checkpoint is local source evidence; Pages still serves the earlier release until the protected PR is merged and deployment is checked.
+The F1 source is on `docs/the-oasis-foundation`, based on main `2a8aa57c4dd906d5126aa76a4bf0ccfaddd2db2f`, at origin `https://github.com/killacalione/The-Oasis.git`. The foundation commit `9d0706d137e5072095686f3a6bb065d4ee9f3835` was pushed. The closeout correction fixes a malformed global CSS selector and reduces only the mobile Home scenery height. Repository identity, protection and the clean Desktop checkout were checked against the actual GitHub/Windows environment. The final PR and deployment revisions are recorded in the release follow-up below when available.
 
 ### Product and research review
 
@@ -24,14 +24,14 @@ The source is being reviewed on `docs/the-oasis-foundation` at base revision `2a
 
 - Environment: Node `v25.9.0`, npm `11.12.1`, Git `2.55.0.3`, PowerShell `7.6.5`; Codex desktop with the Codex in-app browser. `package.json` requires Node `>=24` and has no runtime dependencies.
 - `npm run check`: passed for 85 public files, seven role mirrors, status/content, scripts, five generated routes, theme/motion controls, local links and curated Pages output.
-- `npm run build`: passed; five generated route pages, shared controller/style, favicon, release JSON and `.nojekyll`; the dirty preview correctly labels its source `local-uncommitted`.
-- `git diff --check`: passed with Git line-ending conversion warnings only; no whitespace errors.
-- Browser viewport available in the in-app browser: **1008×1187 CSS pixels**. Home had `scrollWidth=1008`, `scrollHeight=1187`, so it fit exactly; Project, Progress, Roadmap and Community each scrolled vertically without horizontal overflow. All five routes showed the expected heading and `aria-current` navigation item, and all images loaded.
-- All four Home portal anchors were clicked and reached Project, Progress, Roadmap and Community. The five main navigation links were clicked in sequence; each reached its route and updated `aria-current="page"`. Tab focused the visible Skip to content link with a 3px outline; Enter moved to `#main`. Sunset Portal, Arcade Night and Handheld Meadow were each selected, persisted through Project navigation and reload, and the original Meadow preference was restored afterward.
-- Browser reported `prefers-reduced-motion: reduce`; the animation control was disabled and announced the system preference. Console warning/error capture was empty. **Normal-motion pause/resume could not be tested** in this browser session.
-- **Unavailable checks:** the Playwright MCP browser's CDP session timed out during connection. The CUA browser allowed direct route, click, keyboard and theme review but supplied no viewport override, so 1280×720, 1440×900, 375×812 and 200% zoom are not claimed. Native app windows were unavailable; GitHub Desktop is installed but not running, so its UI registration is not re-verified after the rename. Physical device, alternate browser-engine and broader assistive-technology checks remain open.
+- `npm run build`: passed; five generated route pages, shared controller/style, favicon, release JSON and `.nojekyll`; the local working-tree preview labels its source `local-uncommitted`.
+- `git diff --check`: passed; no whitespace errors.
+- The in-app browser measured Home at **1280×720**, **1440×900** and **375×812 CSS pixels**. At each size `scrollWidth` and `scrollHeight` exactly matched the viewport after the mobile scenery correction; all four portal cards stayed inside the phone viewport. The four portal links opened their intended pages. The five main navigation links reached all routes and updated `aria-current="page"`. Project, Progress, Roadmap and Community each scrolled vertically at phone size without horizontal overflow.
+- Keyboard review: Tab focused the Skip to content link with a visible 3px outline; Enter changed the location to `#main`. Sunset Portal, Arcade Night and Handheld Meadow were selected in the control and each selection persisted through Project navigation and reload.
+- Reduced-motion review in the in-app browser found `prefers-reduced-motion: reduce`; the animation control was disabled and announced the device preference. A separate REA run in Chromium **156.0.4314.23**, viewport **1280×720**, with `reduced_motion=no-preference`, completed the normal-state, pause and resume checks. REA evidence: `ev_0f76b6babd0479b225de4f91daa3ec2ba36900a3b02bc814f38f86589760e5e4`; the provider-owned browser process was terminated after capture. Neither REA run recorded console/page errors or failed requests.
+- **200% zoom remains unverified.** The in-app browser did not expose browser-level zoom; Ctrl+plus and Ctrl+Shift+equal left its 375×812 viewport and 1× device-pixel ratio unchanged. The separate browser run tested the requested viewport sizes, not 200% browser zoom. Physical devices, alternate browser engines and broader assistive-technology coverage also remain open.
 
-The live site, Actions, matching release SHA, PR merge and branch cleanup are pending. F1 stays **implemented**, not verified, until all required evidence is available; S1 remains **planned and unstarted**.
+At this checkpoint the live site still served the earlier release, no F1 PR was open, and branch Actions had not started. The PR, protected check, Pages release SHA and cleanup are pending. F1 remains **implemented** until publication evidence is verified; S1 remains **planned and unstarted**.
 
 ## Observed results, 2026-10-15
 

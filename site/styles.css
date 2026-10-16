@@ -131,7 +131,8 @@
   --traveler-boot: #344037;
   --flower: #fff2a7;
 }
-* { box-sizing: border-box; }+html { min-width: 320px; scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
 body { min-height: 100vh; margin: 0; }
 a { color: inherit; text-underline-offset: .22em; }
 a:hover { color: var(--accent-strong); }
@@ -302,7 +303,7 @@ body:not([data-page="home"]) .site-footer { margin-top: auto; }
   .map-heading .eyebrow { margin: 0; font-size: 8px; }
   .map-heading h2 { font-size: 17px; }
   .map-stamp { padding: 3px 5px; font-size: 8px; }
-  .map-canvas { min-height: 0; height: clamp(265px, 39svh, 330px); border-width: 2px; box-shadow: 4px 4px var(--edge); }
+  .map-canvas { min-height: 0; height: clamp(265px, 35svh, 300px); border-width: 2px; box-shadow: 4px 4px var(--edge); }
   .portal-grid { inset: auto 8px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .portal-card { position: relative; inset: auto; width: auto; min-height: 68px; padding: 7px 24px 7px 8px; box-shadow: 3px 3px var(--edge); }
   .portal-card strong { font-size: 12px; }
