@@ -3,12 +3,13 @@
   "project": "RPO HUB",
   "updated": "2026-10-15",
   "stage": "Community foundation",
-  "summary": "A community-built hub of code-created worlds. We are establishing the project, its requirements and contribution process before building the application.",
+  "summary": "An ambitious, community-built hub for code-created worlds. The public project is laying its foundation; application features, online social spaces and published worlds remain planned.",
   "repository": "https://github.com/killacalione/RPO-HUB",
   "currentWork": [
     {"title": "One project, one source of truth", "state": "verified", "detail": "Two planning packages consolidated by content, with earlier requirements preserved and original inputs archived locally.", "evidence": "docs/provenance/MERGE-REPORT.md"},
     {"title": "A place to contribute", "state": "verified", "detail": "Public source, contributor guidance, conduct, governance, Discussions and private security reporting are available.", "evidence": "CONTRIBUTING.md"},
-    {"title": "Progress that follows the source", "state": "verified", "detail": "Reviewed status data generates this site. Main-branch validation and Pages deployment passed with matching live source metadata.", "evidence": "VERIFY.md"}
+    {"title": "Progress that follows the source", "state": "verified", "detail": "Reviewed status data generates this site. Main-branch validation and Pages deployment passed with matching live source metadata.", "evidence": "VERIFY.md"},
+    {"title": "A map of the project", "state": "verified", "detail": "Five original, static information routes and three selectable visual themes are implemented; local build and browser evidence is recorded in VERIFY.md. The live Pages site updates only after a maintainer merges to main.", "evidence": "VERIFY.md"}
   ],
   "milestones": [
     {"id": "F0", "title": "Community foundation", "state": "verified", "detail": "Repository, project documents, contributor workflow and progress site."},
@@ -24,5 +25,5 @@
     {"title": "Architecture", "detail": "Help define small, testable SDK and runtime boundaries before implementation."},
     {"title": "Documentation", "detail": "Improve acceptance criteria, contributor onboarding and evidence quality."}
   ],
-  "limits": "No application, public accounts, multiplayer or voice service is available yet. Planned features and research do not establish release, device, security or child-safety readiness."
+  "limits": "No world editor, playable worlds, public accounts, multiplayer, voice service or product-side community space is available yet. Planned features and research do not establish release, device, security or child-safety readiness."
 }

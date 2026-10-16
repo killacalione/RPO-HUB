@@ -1,6 +1,6 @@
 # Testing and evidence
 
-Foundation checks: public data shape, permitted evidence states, tracked/public file boundaries, recognizable secret/local-path patterns, local Markdown links, seven TOML/card mirrors, source script syntax and deterministic site output. Run `npm run check` then `npm run build`; browser review checks desktop/mobile reflow, keyboard navigation, key links and release metadata. Live Pages deployment and local tests are separate evidence gates.
+Foundation checks: public data shape, permitted evidence states, tracked/public file boundaries, recognizable secret/local-path patterns, local Markdown links, seven TOML/card mirrors, source JavaScript syntax, all five generated routes and their local links, theme/motion controls and the exact curated site output. Run `npm run check` then `npm run build`; browser review checks desktop/mobile reflow and Home viewport fit, navigation across all routes, theme carry-over, keyboard focus/skip link, reduced-motion behavior, visible motion control, console/page errors and release metadata. Live Pages deployment and local tests are separate evidence gates. If the available browser prefers reduced motion, report that the pause/resume interaction itself could not be exercised in that context.
 
 Original input archive bytes/hashes and merge classification are recorded in [merge evidence](../provenance/MERGE-REPORT.md). The earlier prototype's structural test and REA replay cover its old one-world navigation only; no S1 or application safety pass follows.
 
