@@ -4,7 +4,7 @@
 
 ## What exists today
 
-The project is in **F1 — product definition and community foundation**. This public repository contains the product blueprint, phased requirements and proposals, community contribution process, and a static pixel-art progress site. It does not provide real sign-in, a playable Hub or Home, a wardrobe, user-made world hosting, chat, voice or any other online product service. S1 application implementation has not started. The site’s progress data and [work ledger](docs/planning/WORK-STATE.md) distinguish implemented source, verified checks, planned work and remaining gaps.
+The **F1 product definition and community foundation is verified**. This public repository contains the product blueprint, phased requirements and proposals, community contribution process, and a static pixel-art progress site. It does not provide real sign-in, a playable Hub or Home, a wardrobe, user-made world hosting, chat, voice or any other online product service. S1 application implementation has not started. The site’s progress data and [work ledger](docs/planning/WORK-STATE.md) distinguish implemented source, verified checks, planned work and remaining gaps.
 
 ## Start here
 

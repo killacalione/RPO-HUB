@@ -6,6 +6,6 @@ This is the consolidated working project, not an uncustomized starter kit.
 2. Read [current work](docs/planning/WORK-STATE.md) before selecting a task.
 3. Use [CONTRIBUTING](CONTRIBUTING.md) for branches, checks and pull requests.
 4. Read [PRD](docs/project/PRD.md), [requirements](docs/planning/REQUIREMENTS.md) and [roadmap](docs/planning/ROADMAP.md) for product changes.
-5. Keep requirements separate from proposals and actual verification. F1 foundation/product definition is the current task; S1 is future work and requires a separate owner-authorized scope after F1.
+5. Keep requirements separate from proposals and actual verification. F1 foundation/product definition is verified; S1 remains future work and requires a separate owner-authorized scope.
 
 The two input packages have been consolidated by content. See [merge evidence](docs/provenance/MERGE-REPORT.md). Local preservation files are intentionally excluded from public Git.

@@ -1,7 +1,7 @@
 {
   "home": {
     "intro": "The Oasis is planned as a persistent community hub: start in a central Hub, discover worlds others have made, personalize an avatar and Home, or create worlds of your own. Visitors won't need to code.",
-    "now": "Today: defining the foundation in public. Sign-in and playable spaces are not live."
+    "now": "The public product foundation is verified. Sign-in, playable spaces and online services are not live."
   },
   "project": {
     "pillars": [
@@ -9,10 +9,10 @@
       {"title": "Make it yours", "detail": "A player will control their avatar and outfit, open a personal Home, and carry their choices between compatible worlds."},
       {"title": "Explore and create", "detail": "Find worlds made by the community or build one with code. Visitors can explore without programming; creator tools are one path inside the larger Oasis."}
     ],
-    "next": "The current work is F1: define the complete Hub-first experience, trace requirements and unknowns, and make the foundation easy to contribute to. Only after that gate does a separately authorized S1 propose a local proof with a Hub/dashboard, player-owned appearance, optional Home, two original worlds, exact confirmed-location resume, recoverable saves, and an independently stoppable interpreted runtime with bounded host commands and hostile-case tests. Application implementation has not started."
+    "next": "F1 is verified. Application implementation has not started; S1 remains planned until the owner authorizes a separate scope. The proposed local proof covers a Hub/dashboard, player-owned appearance, optional Home, two original worlds, exact confirmed-location resume, recoverable saves, and an independently stoppable interpreted runtime with bounded host commands and hostile-case tests."
   },
   "progress": {
-    "intro": "The project is defining The Oasis in public. Here is the foundation work with evidence you can inspect; planned product features are labeled clearly."
+    "intro": "The F1 product foundation is verified in public. The application has not started. Here is the completed foundation work with evidence you can inspect."
   },
   "roadmap": {
     "intro": "The Oasis has a broad journey: establish a clear product foundation, prove the local experience, then earn each online capability with its own evidence. No dates or percentages are promised."

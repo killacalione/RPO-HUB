@@ -31,7 +31,17 @@ The F1 source is on `docs/the-oasis-foundation`, based on main `2a8aa57c4dd906d5
 - Reduced-motion review in the in-app browser found `prefers-reduced-motion: reduce`; the animation control was disabled and announced the device preference. A separate REA run in Chromium **156.0.4314.23**, viewport **1280×720**, with `reduced_motion=no-preference`, completed the normal-state, pause and resume checks. REA evidence: `ev_0f76b6babd0479b225de4f91daa3ec2ba36900a3b02bc814f38f86589760e5e4`; the provider-owned browser process was terminated after capture. Neither REA run recorded console/page errors or failed requests.
 - **200% zoom remains unverified.** The in-app browser did not expose browser-level zoom; Ctrl+plus and Ctrl+Shift+equal left its 375×812 viewport and 1× device-pixel ratio unchanged. The separate browser run tested the requested viewport sizes, not 200% browser zoom. Physical devices, alternate browser engines and broader assistive-technology coverage also remain open.
 
-At this checkpoint the live site still served the earlier release, no F1 PR was open, and branch Actions had not started. The PR, protected check, Pages release SHA and cleanup are pending. F1 remains **implemented** until publication evidence is verified; S1 remains **planned and unstarted**.
+Before publication, the live site still served the earlier release and no F1 PR was open. The verified release and follow-up status update are recorded below. S1 remains **planned and unstarted**.
+
+### Protected PR #6 and verified Pages release — 2026-10-16
+
+- [PR #6](https://github.com/killacalione/The-Oasis/pull/6) was reviewed at head `de8b3786458e44ccb45803e3f1732a631ef191f8`. Its required **Foundation checks** passed at [run 38863333125](https://github.com/killacalione/The-Oasis/actions/runs/38863333125). There were no review threads or requested approvals; the merge state was clean against protected main. It was squash-merged without administrator bypass as `3e12e9dcbb134782dba5c6c4ddc303ae2b56ed20`.
+- The [main Foundation and Pages run 38863385434](https://github.com/killacalione/The-Oasis/actions/runs/38863385434) passed both Foundation checks and Publish progress. On synced local `main`, `npm run check`, `npm run build`, and `git diff --check` passed. The build produced five pages at source `3e12e9dcbb134782dba5c6c4ddc303ae2b56ed20`; `dist/release.json` recorded that exact SHA.
+- Live [`release.json`](https://killacalione.github.io/The-Oasis/release.json) reports project `The Oasis` and revision `3e12e9dcbb134782dba5c6c4ddc303ae2b56ed20`. Home, Project, Progress, Roadmap, Community, `app.js`, `styles.css`, `favicon.svg`, and `release.json` all returned **HTTP 200** at the `/The-Oasis/` base path with expected content types. Each response matched the clean main build after CRLF/LF normalization.
+- Public GitHub Discussions and the live contribution, governance, conduct, experience, roadmap, implementation-brief, and verification documents returned HTTP 200. Anonymous checks of the issue-creation and private-security-reporting links redirected to GitHub login as expected; no form was submitted.
+- Reviewed source and merged source have the same Git tree: both identify tree `d19a54a44bdfa8edd41b680717c23062eb8c58b0`. The merged feature branch was auto-deleted remotely, and its local branch was removed only after this tree comparison. Local `main` was synchronized and clean before the status-evidence follow-up.
+
+The first deployed The Oasis release is verified. This release-evidence follow-up updates the structured F1/publication status to **verified**; it does not claim S1 or any online product capability.
 
 ## Observed results, 2026-10-15
 
