@@ -10,6 +10,29 @@ npm run dev
 
 Input archive equality and merge counts are documented in [consolidation evidence](docs/provenance/MERGE-REPORT.md). Current publication requires clean public-file review, valid local links/role mirrors/status data, generated-only Pages artifacts, passing Actions, a matching live `release.json`, branch policy and the correct repository in GitHub Desktop.
 
+## The Oasis foundation closeout — 2026-10-16
+
+The F1 source is on `docs/the-oasis-foundation`, based on main `2a8aa57c4dd906d5126aa76a4bf0ccfaddd2db2f`, at origin `https://github.com/killacalione/The-Oasis.git`. The foundation commit `9d0706d137e5072095686f3a6bb065d4ee9f3835` was pushed. The closeout correction fixes a malformed global CSS selector and reduces only the mobile Home scenery height. Repository identity, protection and the clean Desktop checkout were checked against the actual GitHub/Windows environment. The final PR and deployment revisions are recorded in the release follow-up below when available.
+
+### Product and research review
+
+- The canonical experience and F0–S5 gates now make the Hub/dashboard the center of the product, with creation as one path among discovery, avatar/Home personalization and eventual shared experiences. The first account arrives in the Hub; later sessions can resume, choose Always Hub or use an existing Home. Avatar appearance is player-owned, and guest scripts cannot control account records or grants.
+- Current platform references are recorded in [`docs/research/SOURCES.md`](docs/research/SOURCES.md). The migration uses GitHub's [repository rename guidance](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository), including its warning that the old project Pages URL is not redirected; the local GitHub Desktop remote procedure is documented by [GitHub Desktop](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/changing-the-remote-url-for-a-repository-in-github-desktop). Protected squash merge will use the CLI's [`--match-head-commit` guard](https://cli.github.com/manual/gh_pr_merge). Browser lifecycle and consistent-navigation sources remain linked as S109–S110 and S108.
+- The original R-001–R-023 requirements remain; R-024–R-026 are additive. The checker verifies retained IDs, uniqueness, stable roadmap task IDs, phase order and generated site/status agreement. Current S1 copy describes containment behavior and the hostile tests still required; it does not promise safe guest scripts.
+
+### Local checks and browser review
+
+- Environment: Node `v25.9.0`, npm `11.12.1`, Git `2.55.0.3`, PowerShell `7.6.5`; Codex desktop with the Codex in-app browser. `package.json` requires Node `>=24` and has no runtime dependencies.
+- `npm run check`: passed for 85 public files, seven role mirrors, status/content, scripts, five generated routes, theme/motion controls, local links and curated Pages output.
+- `npm run build`: passed; five generated route pages, shared controller/style, favicon, release JSON and `.nojekyll`; the local working-tree preview labels its source `local-uncommitted`.
+- `git diff --check`: passed; no whitespace errors.
+- The in-app browser measured Home at **1280×720**, **1440×900** and **375×812 CSS pixels**. At each size `scrollWidth` and `scrollHeight` exactly matched the viewport after the mobile scenery correction; all four portal cards stayed inside the phone viewport. The four portal links opened their intended pages. The five main navigation links reached all routes and updated `aria-current="page"`. Project, Progress, Roadmap and Community each scrolled vertically at phone size without horizontal overflow.
+- Keyboard review: Tab focused the Skip to content link with a visible 3px outline; Enter changed the location to `#main`. Sunset Portal, Arcade Night and Handheld Meadow were selected in the control and each selection persisted through Project navigation and reload.
+- Reduced-motion review in the in-app browser found `prefers-reduced-motion: reduce`; the animation control was disabled and announced the device preference. A separate REA run in Chromium **156.0.4314.23**, viewport **1280×720**, with `reduced_motion=no-preference`, completed the normal-state, pause and resume checks. REA evidence: `ev_0f76b6babd0479b225de4f91daa3ec2ba36900a3b02bc814f38f86589760e5e4`; the provider-owned browser process was terminated after capture. Neither REA run recorded console/page errors or failed requests.
+- **200% zoom remains unverified.** The in-app browser did not expose browser-level zoom; Ctrl+plus and Ctrl+Shift+equal left its 375×812 viewport and 1× device-pixel ratio unchanged. The separate browser run tested the requested viewport sizes, not 200% browser zoom. Physical devices, alternate browser engines and broader assistive-technology coverage also remain open.
+
+At this checkpoint the live site still served the earlier release, no F1 PR was open, and branch Actions had not started. The PR, protected check, Pages release SHA and cleanup are pending. F1 remains **implemented** until publication evidence is verified; S1 remains **planned and unstarted**.
+
 ## Observed results, 2026-10-15
 
 - `npm run check`: passed for 81 public files, status/link/script checks and seven native/card mirrors. Python 3.11 parsed all seven TOMLs independently.

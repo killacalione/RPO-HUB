@@ -1,7 +1,7 @@
 # Support
 
-- **Questions and ideas:** [Discussions](https://github.com/killacalione/RPO-HUB/discussions).
-- **Reproducible defects or scoped work:** [Issues](https://github.com/killacalione/RPO-HUB/issues/new/choose).
+- **Questions and ideas:** [Discussions](https://github.com/killacalione/The-Oasis/discussions).
+- **Reproducible defects or scoped work:** [Issues](https://github.com/killacalione/The-Oasis/issues/new/choose).
 - **Security:** [private reporting](SECURITY.md).
 - **Conduct:** [Code of Conduct](CODE_OF_CONDUCT.md).
 

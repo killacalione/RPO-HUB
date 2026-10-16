@@ -726,6 +726,54 @@ Scope: Layered project instruction discovery/overrides. Root file presence does 
 
 Evidence route: Root current primary documentation read, 2026-10-14 after round seven. Source behavior is not verification of the owner's runtime.
 
+## S105
+
+[Renaming a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository) — GitHub Docs.
+
+Scope: repository web/Git references generally redirect after an in-place rename, but project Pages URLs are excluded; Git remotes should be updated; do not recreate the old repository name if its redirect must remain. Hosted GitHub Actions references to renamed repositories also do not redirect.
+
+Evidence route: Official documentation checked 2026-10-15. It informs the The Oasis migration sequence. Actual remote/protection/workflow/site behavior must be checked against the account and live deployment.
+
+## S106
+
+[What is GitHub Pages?](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) — GitHub Docs.
+
+Scope: a project site uses the repository path as part of its default Pages URL; custom domains can change that root. Repository-name changes therefore need a matching project-site path and artifact/link verification. No custom domain is selected here.
+
+Evidence route: Official Pages documentation checked 2026-10-15. General publishing behavior is not proof that a particular workflow completed.
+
+## S107
+
+[Changing the remote URL for a repository in GitHub Desktop](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/changing-the-remote-url-for-a-repository-in-github-desktop) — GitHub Docs.
+
+Scope: on Windows, Desktop exposes the primary remote URL under Repository settings → Remote and lets the user update/save it after a repository rename.
+
+Evidence route: Official Desktop documentation checked 2026-10-15. The documented path is not a claim that the UI was open or inspected during this task; record actual Desktop status separately.
+
+## S108
+
+[Understanding Success Criterion 3.2.3: Consistent Navigation](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation) — W3C WAI.
+
+Scope: repeated navigation mechanisms should occur in the same relative order across pages unless changed by the user. It supports predictable dashboard/site navigation and is explanatory guidance, not an accessibility conformance result.
+
+Evidence route: Current official W3C understanding document checked 2026-10-15. The Oasis application has not been implemented or tested for conformance.
+
+## S109
+
+[Window: beforeunload event](https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event) — MDN Web Docs.
+
+Scope: `beforeunload` is not reliably fired, especially on mobile. It cannot guarantee a location/profile save during page close or crash. MDN recommends a more reliable visibility-change signal for checkpointing; an event still does not prove a storage transaction finished.
+
+Evidence route: Current MDN page checked 2026-10-15. It supports confirmed periodic/durable writes and honest last-confirmed-save recovery; it is not an implementation test.
+
+## S110
+
+[Document: visibilitychange event](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event) — MDN Web Docs.
+
+Scope: transition to hidden is a reliably observable lifecycle signal and useful point for pausing work or attempting a checkpoint. It is not itself durable storage acknowledgement and does not make a last-second async write crash-proof.
+
+Evidence route: Current MDN page checked 2026-10-15. Platform, persistence and crash behavior remain to be tested in S1/S2.
+
 ## S91
 
 [Codex model/provider configuration](https://learn.chatgpt.com/docs/config-file/config-advanced) — OpenAI.

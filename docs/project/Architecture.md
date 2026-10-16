@@ -2,12 +2,22 @@
 
 ## Current foundation
 
-One canonical repository contains maintained project documents, generic role adapters, contribution guidance, structured project/site copy and a dependency-free static-site generator. `data/project-status.json` is the public progress source; `npm run build` renders five static routes plus same-origin CSS, a small session-preference controller, a hand-authored inline SVG scene and source-revision metadata into ignored `dist/`. PR CI validates generated routes and local links; trusted main builds deploy only curated `dist/` through GitHub Pages. The site has no application backend, database, authentication, analytics or remote asset dependency.
+One canonical repository contains maintained Oasis product documents, contributor and portable-role guidance, structured status/site copy and a dependency-free static-site generator. `data/project-status.json` is the public progress source; `npm run build` renders five static routes plus same-origin CSS, session-preference JavaScript, a hand-authored inline SVG scene and source-revision metadata into ignored `dist/`. PR CI validates generated routes and local links; trusted `main` builds deploy only curated `dist/` through GitHub Pages. The information site has no application backend, database, authentication, analytics or remote asset dependency. It uses browser `sessionStorage` only for the visual theme and motion preference. It is not the product dashboard or a playable Hub.
 
-## Proposed application boundaries
+## Product topology — proposed
 
-The future trusted host owns editor UI, renderer, local drafts, navigation and independent guest termination. A versioned SDK/project contract is shared by local tooling and the browser editor. Guest code runs inside an interpreted runtime, with validated capability messages and independent host/graphics budgets. Babylon, Monaco and QuickJS remain candidates until a bounded tested S1 adopts exact pins.
+The future client centers on a persistent Hub with an always-available launch dashboard. The dashboard opens eligible world discovery, a player’s own Home, the Wardrobe, creation tools and preferences. New accounts first create/select an avatar and spawn in the Hub; returning preferences can resume, choose Hub or choose an existing Home. See the [experience blueprint](../planning/OASIS-EXPERIENCE.md). These are product rules, not running services.
 
-Later authoritative rooms, durable state, text/media authorization and publishing are separate services. Colyseus/Node and Workers/Durable Objects are distinct designs, not assumed interchangeable. Voice remains outside guest code. Client adapters preserve capability differences rather than promising feature parity. Adult-only functions, if ever selected, are a separate high-risk boundary from all-age surfaces.
+## Trust and data boundaries — required, implementation unselected
 
-See [SDK](../planning/WORLD-SDK.md), [S1](../planning/S1-IMPLEMENTATION-BRIEF.md), [demo](../planning/DEMO-EXPERIENCE.md), [space access](../planning/SPACE-ACCESS.md) and [voice](../planning/VOICE-DESIGN.md). No product capability is verified by these designs.
+The future trusted host owns interface, renderer, navigation, local or online save acknowledgement, avatar selection, travel validation and guest lifecycle. A versioned World SDK/project contract is shared by local source tools and the integrated editor. Guest code runs in an interpreted runtime with independently interruptible execution, validated capability messages, bounded queues/commands and host/renderer budgets. It cannot access account records, change player-owned appearance, mint grants or decide world permissions.
+
+Keep these domains separate: account identity/profile; avatar/outfit entitlements; arrival preferences; the last confirmed location; personal Home configuration/requested visibility; immutable creator-owned world source/version; validated player-specific world state; and server-authoritative access/eligibility. Validate world/version, access, coordinates and avatar compatibility before resume/join. A failed or denied move leaves the saved record intact and offers explicit recovery.
+
+Babylon, Monaco and QuickJS remain candidate components until a bounded S1 spike tests exact pins, behavior and dependency/network boundaries in the actual environment. No renderer, editor, runtime, storage, identity provider or backend is selected for production. Later authoritative rooms, durable state, text/media authorization and publishing are separate stage decisions. Voice stays outside guest code. Client adapters document actual capability differences. Adult-only functions remain separately gated from all-age surfaces.
+
+## Evidence
+
+Current information-site structure and tests are documented in [testing](testing.md) and [VERIFY](../../VERIFY.md). Application boundaries and provider choices remain proposed; a document, candidate SDK or static-site check does not verify a playable Oasis experience or safe guest runtime.
+
+See [SDK](../planning/WORLD-SDK.md), [S1](../planning/S1-IMPLEMENTATION-BRIEF.md), [demo](../planning/DEMO-EXPERIENCE.md), [space access](../planning/SPACE-ACCESS.md), [security](security.md) and [voice](../planning/VOICE-DESIGN.md).

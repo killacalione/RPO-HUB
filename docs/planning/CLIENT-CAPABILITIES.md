@@ -1,4 +1,4 @@
-> Foundation adoption 2026-10-15: current root/work ledger supersedes historical repository and tool-availability statements. REA and Context7 are available here; S1 remains unstarted. No new configuration is implied.
+> Foundation adoption 2026-10-16: the current session has REA, Context7, GitHub and browser tools available. This is dated session evidence only; availability must be checked again in the client doing the work. S1 remains unstarted. No client configuration is implied.
 
 # Client and model capability record
 

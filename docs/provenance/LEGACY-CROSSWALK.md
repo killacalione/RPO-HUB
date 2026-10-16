@@ -1,5 +1,7 @@
 # Legacy requirement crosswalk
 
+This is a historical ID map. **RPO HUB** rows preserve the former name and source wording; current product scope and branding are governed by the dated additions in [DECISIONS](../planning/DECISIONS.md), [REQUIREMENTS](../planning/REQUIREMENTS.md) and [OASIS-EXPERIENCE](../planning/OASIS-EXPERIENCE.md). In particular, DEC-001 is historical; the current product name is The Oasis. Earlier creator requirements remain active within the larger Hub experience.
+
 Earlier IDs are preserved for traceability. Current means applicable intent, not implemented behavior. Later recorded decisions govern conflicts. Original wording remains in local byte-verified input archives.
 
 | Legacy ID | Preserved meaning | Current treatment |
@@ -27,7 +29,7 @@ Earlier IDs are preserved for traceability. Current means applicable intent, not
 | RPO-ECON-001 | Explicit recorded approval before economy/payment/token features | Preserved gate; no activation |
 | RPO-AI-001 | Identify simulations and source/rights provenance | Deferred AI/persona gate |
 | RPO-OPEN-001 | License, conduct, contributions, security and decisions | Current foundation |
-| DEC-001 | Working name RPO HUB | Working identity retained; final branding open |
+| DEC-001 | Working name RPO HUB | Historical name; superseded by owner-selected The Oasis (D-037) |
 | DEC-002 | Research before implementation | Current foundation-first instruction |
 | DEC-003 | Global vision, initially US-centered research | Historical research scope; D-029 worldwide intent governs launch |
 | DEC-004 | Mixed-age alpha follows child-safety readiness | Current online gate |

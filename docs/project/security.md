@@ -6,6 +6,8 @@ Use read-only `pull_request` checks, SHA-pinned reviewed Actions, GitHub-hosted 
 
 Future clients, assets, scripts and model output are untrusted. S1 requires interpreted guest code, independent termination, bounded queues/commands, resource ownership validation and renderer/GPU limits. Text/proximity/party voice, trusted direct publishing and code-first creation are selected requirements, not undecided or implemented features. Client attenuation/hidden UI does not prove denied media or data delivery.
 
+The Oasis product boundary also requires account identity, avatar/outfit entitlements, arrival preferences, confirmed location, Home configuration, immutable world source, validated personal state and authorization to stay distinct. The player owns avatar/outfit choice; world code cannot silently substitute appearance or write account records. A local S1 profile or Home visibility selection is not an identity, online ownership record, invitation or access grant. Resume/join must revalidate current access, world version, coordinates and appearance compatibility. Failure preserves the record and gives a visible route to Retry, Hub or existing Home.
+
 Before public accounts/social use, establish age/guardian/contact policy, regional eligibility, data minimization/deletion, reporting/appeals, rights/takedown and staffed incident response. Same-age rooms do not prove actual ages or legal exemption. Adult-only functions remain separate and inactive. Independent security and human readiness review precede high-risk surfaces.
 
 See [age policy](../planning/AGE-POLICY.md), [global readiness](../legal/GLOBAL-READINESS.md), [SDK](../planning/WORLD-SDK.md) and [public-release gates](../planning/PUBLIC-RELEASE.md). Research is issue spotting, not certification.

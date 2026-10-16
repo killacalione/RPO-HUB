@@ -6,7 +6,7 @@ The current repository contains planning and a static project-progress site. No 
 
 ## Report privately
 
-Use [GitHub private vulnerability reporting](https://github.com/killacalione/RPO-HUB/security/advisories/new). Include affected revision, reproduction, likely impact and a minimal non-sensitive example. Do not post working exploits, credentials, child/user data or private incident records in public Issues.
+Use [GitHub private vulnerability reporting](https://github.com/killacalione/The-Oasis/security/advisories/new). Include affected revision, reproduction, likely impact and a minimal non-sensitive example. Do not post working exploits, credentials, child/user data or private incident records in public Issues.
 
 If private reporting is unavailable, use [GitHub Support](https://support.github.com/) for platform concerns and open only a non-sensitive request for a reporting channel. There is no paid bounty or guaranteed response SLA.
 
