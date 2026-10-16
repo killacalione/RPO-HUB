@@ -56,6 +56,14 @@ The first deployed The Oasis release is verified. This release-evidence follow-u
 
 Final publication updates only evidence/status labels. Its exact revision and deployment result are available from Git history, Actions and the live release record. Branch protection is established at bootstrap completion. No external fork PR, native-role loading, broad device/accessibility conformance, S1 hostile runtime, privacy or public-release readiness is claimed.
 
+## The Oasis foundation release closeout — 2026-10-16 UTC
+
+- [PR #6](https://github.com/killacalione/The-Oasis/pull/6) merged by protected squash as `3e12e9dcbb134782dba5c6c4ddc303ae2b56ed20`. The main [Foundation and Pages workflow](https://github.com/killacalione/The-Oasis/actions/runs/38863385434) succeeded, and the live release record matched that SHA.
+- [PR #7](https://github.com/killacalione/The-Oasis/pull/7) records the verified foundation status and post-release evidence. Its required `Foundation checks` passed, then it merged by protected squash as `8947169126bf6834c203bea0ddef67584437be54`. The [main workflow](https://github.com/killacalione/The-Oasis/actions/runs/38863937817) completed successfully, including Pages publication. No administrator bypass was used.
+- Live `https://killacalione.github.io/The-Oasis/release.json` reports project `The Oasis`, status date `2026-10-16`, schema version 1, and revision `8947169126bf6834c203bea0ddef67584437be54`. Home, Project, Progress, Roadmap, Community, `app.js`, `styles.css`, favicon and release JSON all returned HTTP 200 and matched the local build after CRLF/LF normalization.
+- Final local `npm run check`, `npm run build`, and `git diff --check` passed on main at the published source revision. The build reports that same revision. The open PR list is empty; the only remote branch is `main`. The reviewed PR #7 head and squash merge have identical file trees; after verification, the local evidence branch was removed and local main was fast-forwarded to origin/main.
+- F1 is verified as a published product-definition and information-site foundation. S1 application development remains unstarted. Actual 200% zoom, physical devices, other browser engines and broad assistive-technology coverage remain unverified; this release does not claim global accessibility, runtime security, privacy, or public-service readiness.
+
 ## PR #4 completion checkpoint — 2026-10-16 UTC
 
 The owner authorized merge and branch cleanup after the earlier implementation checkpoint. Dependency PRs #1–#3 were each updated against then-current main, passed their refreshed Foundation check and merged. Their remote branches are absent. PR #4 now exists, and `gh pr update-branch 4 --repo killacalione/RPO-HUB`, `git fetch origin --prune`, and `git merge --ff-only origin/feat/pixel-art-community-hub` succeeded; source synchronized at `9c3ddf4` before this correction. Local main had been stale; remote main is `a8a30f80c62fb21c0accde6edcd516cb58d934cb`.
