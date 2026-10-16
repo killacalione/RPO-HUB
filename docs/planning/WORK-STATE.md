@@ -6,7 +6,7 @@ Task recorded for the approved nine-theme cosmetics refresh. Scope is the existi
 
 Writer: current Codex desktop coordinator/implementation engineer, one active source/document writer. A separate read-only review will be requested at the implementation checkpoint; it will not edit the checkout. Client/model route has not changed; the exact model identifier is not exposed in this session. No global machine setting changed.
 
-Source root: this repository at starting revision `9dfc8f18c89c876fccbb4fbf2ac5bafed89ee75d`; branch `feat/oasis-pixel-atmospheres`, based on clean `main`. Origin remains `https://github.com/killacalione/The-Oasis.git`. Runtime observed: Node `v25.9.0`, npm `11.12.1`, Git `2.55.0.3`, PowerShell `7.6.5`; package requires Node 24 or newer and has no dependencies.
+Source root: this repository at starting revision `9dfc8f18c89c876fccbb4fbf2ac5bafed89ee75d`; branch `feat/oasis-pixel-atmospheres`, based on clean `main`. Local implementation commit: `0588fb6a8aa4d9b01280bcde7e0efcb532e2109b`. Origin remains `https://github.com/killacalione/The-Oasis.git`. Runtime observed: Node `v25.9.0`, npm `11.12.1`, Git `2.55.0.3`, PowerShell `7.6.5`; package requires Node 24 or newer and has no dependencies.
 
 Owned files: `site/theme-registry.js`, `site/styles.css`, `site/app.js`, deletion of the superseded `site/portal-world.svg`, `scripts/build-site.mjs`, `scripts/check-foundation.mjs`, `docs/project/DESIGN_SYSTEM.md`, `docs/project/testing.md`, `VERIFY.md` and this ledger. No account, application, audio, hosted-world, online service or S1 source is in scope.
 
@@ -16,7 +16,7 @@ Local implementation and browser review are complete. The generated build was ex
 
 Remaining gaps: actual 200% browser zoom and a real hidden-tab transition could not be verified with available isolated browser controls; physical devices, alternate engines and broad assistive-technology coverage are also open. Do not claim these as passes. Public release is pending final source validation, branch push, protected PR checks/merge and Pages SHA/output-parity review. F1 remains verified; S1 is unstarted.
 
-Final sequential commands passed: `npm run check` (85 public files, seven role mirrors, five routes, nine registry themes, ID/animation and 300 KiB budget checks), `npm run build` (five pages), and `git diff --check`. Largest measured generated route bundle is 86,439 bytes. The no-dialog fallback was retested after the CSS fix: select visible, dialog gallery hidden, Snowlight Valley applied and stored, no page errors. The branch remains local/uncommitted at this checkpoint.
+Final sequential commands passed: `npm run check` (85 public files, seven role mirrors, five routes, nine registry themes, ID/animation and 300 KiB budget checks), `npm run build` (five pages), and `git diff --check`. Largest measured generated route bundle is 86,439 bytes. The no-dialog fallback was retested after the CSS fix: select visible, dialog gallery hidden, Snowlight Valley applied and stored, no page errors. Commit `0588fb6a8aa4d9b01280bcde7e0efcb532e2109b` is clean locally; remote push/PR and deployment are pending.
 
 Next concrete step: commit the validated source/docs, push the focused branch, then use protected PR checks and verify the final merged Pages release against its SHA.
 

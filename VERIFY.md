@@ -12,7 +12,7 @@ Input archive equality and merge counts are documented in [consolidation evidenc
 
 ## Pixel-art atmosphere redesign — implementation and local verification — 2026-10-16
 
-The focused branch `feat/oasis-pixel-atmospheres` starts from clean `main` at `9dfc8f18c89c876fccbb4fbf2ac5bafed89ee75d`. This updates only the five-page information site. It preserves the product explanation, verified F1 progress, `/The-Oasis/` hosting base, existing `sunset`, `arcade`, and `meadow` preference IDs and browser-session keys, CSP and curated `dist/` boundary. S1 remains unstarted. This checkpoint is local; it is not claimed merged or live.
+The focused branch `feat/oasis-pixel-atmospheres` starts from clean `main` at `9dfc8f18c89c876fccbb4fbf2ac5bafed89ee75d`; implementation commit is `0588fb6a8aa4d9b01280bcde7e0efcb532e2109b`. This updates only the five-page information site. It preserves the product explanation, verified F1 progress, `/The-Oasis/` hosting base, existing `sunset`, `arcade`, and `meadow` preference IDs and browser-session keys, CSP and curated `dist/` boundary. S1 remains unstarted. The local commit has not yet been published, merged or deployed.
 
 ### Research translated into original design
 
