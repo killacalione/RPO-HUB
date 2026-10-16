@@ -1,6 +1,6 @@
 # The Oasis — project brief
 
-Updated 2026-10-15. **Requirement:** establish the product and contribution foundation before application implementation. “RPO HUB” is the former working/repository name; its historical decisions and evidence are retained in the [decision log](docs/planning/DECISIONS.md) and [legacy crosswalk](docs/provenance/LEGACY-CROSSWALK.md).
+Updated 2026-10-16. **Requirement:** establish the product and contribution foundation before application implementation. F1 is now verified; S1 application implementation remains unstarted. “RPO HUB” is the former working/repository name; its historical decisions and evidence are retained in the [decision log](docs/planning/DECISIONS.md) and [legacy crosswalk](docs/provenance/LEGACY-CROSSWALK.md).
 
 | Field | Current position |
 | --- | --- |
@@ -10,7 +10,7 @@ Updated 2026-10-15. **Requirement:** establish the product and contribution foun
 | Product | A persistent community hub where people meet through a central Hub, visit community-made worlds, personalize player-owned avatars and personal Homes, and create worlds themselves |
 | First arrival | Create account → create/select avatar → first successful spawn in the Hub, with the launch dashboard available; these are planned product behaviors, not live services |
 | Returning arrival | Resume last confirmed world/version, coordinate frame, exact X/Y/Z, facing and save revision by default; after first arrival, choose Resume, Always Hub or Always Home |
-| Current phase | F1 — The Oasis definition, contributor/agent guidance, branding and repository/site migration |
+| Current phase | F1 — The Oasis definition: verified; S1 local proof: planned and unstarted |
 | Application state | No account system, playable Hub/Home/world, wardrobe or online service is implemented. S1 application work has not started. |
 | S1 proof | Small internal local prototype: Hub/dashboard, locally owned avatar appearance and Home, shared authoring contract, two original worlds, personalization, portals, exact-location recovery and portable local save/export |
 | Long-term audience | Children, teens and adults worldwide, subject to actual regional, age/guardian, privacy, accessibility, operating and financial readiness |
