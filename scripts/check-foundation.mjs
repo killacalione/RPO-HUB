@@ -45,13 +45,33 @@ const content=JSON.parse(await readFile(path.join(root,'site/site-content.json')
 const states=new Set(['implemented','verified','planned','blocked']);
 assert(data.schemaVersion===1,'Status schemaVersion must be 1');
 assert(/^\d{4}-\d{2}-\d{2}$/.test(data.updated),'Status date invalid');
-assert(data.repository==='https://github.com/killacalione/RPO-HUB','Repository identity mismatch');
+assert(data.project==='The Oasis','Product identity mismatch');
+assert(data.repository==='https://github.com/killacalione/The-Oasis','Repository identity mismatch');
 for(const item of [...data.currentWork,...data.milestones])assert(states.has(item.state),`Unknown evidence state: ${item.state}`);
+assert(JSON.stringify(data.milestones.map(x=>x.id))===JSON.stringify(['F0','F1','S1','S2','S3','S4','S5']),'Status must cover F0, F1 and S1–S5 in roadmap order');
+assert(data.milestones.find(x=>x.id==='F0')?.state==='verified','F0 foundation status mismatch');
+assert(['implemented','verified'].includes(data.milestones.find(x=>x.id==='F1')?.state),'F1 must not be left planned after this product foundation begins');
 assert(data.milestones.find(x=>x.id==='S1')?.state==='planned','Foundation must not claim S1 implemented');
 for(const item of data.currentWork)assert(files.includes(item.evidence),`Missing evidence: ${item.evidence}`);
 assert(content.home?.intro && content.home?.now,'Home copy missing');
+assert(/central Hub/i.test(content.home.intro) && /worlds/i.test(content.home.intro) && /Visitors won't need to code/i.test(content.home.intro),'Home copy must describe the Oasis hub journey and non-coder visitors');
 assert(content.project?.pillars?.length===3,'Project page requires three concise project pillars');
+assert(content.project.pillars.some(x=>/arrive/i.test(x.title)) && content.project.pillars.some(x=>/explore/i.test(x.title)),'Project page must explain Hub arrival and world exploration');
 assert(content.progress?.intro && content.roadmap?.intro && content.community?.intro,'A detail-page introduction is missing');
+const roadmap=await readFile(path.join(root,'docs/planning/ROADMAP.md'),'utf8');
+const experience=await readFile(path.join(root,'docs/planning/OASIS-EXPERIENCE.md'),'utf8');
+for(const id of ['F0','F1','S1','S2','S3','S4','S5'])assert(roadmap.includes(`**${id} —`),`Roadmap is missing phase ${id}`);
+assert(/Structured status.*only source for verified public completion/i.test(roadmap),'Roadmap must identify structured status as the completion source');
+const taskIds=[...roadmap.matchAll(/^\| ((?:F0|F1|S[1-5])-T\d{2}) \|/gm)].map(match=>match[1]);
+assert(new Set(taskIds).size===taskIds.length,'Roadmap task IDs must be unique and stable');
+for(const id of ['F0-T01','F0-T02','F0-T03','F1-T01','F1-T02','F1-T03','F1-T04','S1-T01','S1-T02','S1-T03','S1-T04','S1-T05','S1-T06','S1-T07','S2-T01','S2-T02','S2-T03','S2-T04','S3-T01','S3-T02','S4-T01','S4-T02','S5-T01','S5-T02'])assert(taskIds.includes(id),`Roadmap task ID missing or changed: ${id}`);
+for(const phase of ['F0','F1','S1','S2','S3','S4','S5'])assert(taskIds.some(id=>id.startsWith(`${phase}-T`)),`Roadmap has no task for phase ${phase}`);
+for(const token of ['first spawn is always in the Hub','Always Hub','Always Home','exact X, Y and Z position','last save revision confirmed','cannot silently replace'])assert(experience.toLowerCase().includes(token.toLowerCase()),`Experience blueprint is missing requirement: ${token}`);
+const requirementText=await readFile(path.join(root,'docs/planning/REQUIREMENTS.md'),'utf8');
+const requirementIds=[...requirementText.matchAll(/^\| (R-\d{3}) \|/gm)].map(match=>match[1]);
+assert(new Set(requirementIds).size===requirementIds.length,'Requirement IDs must not be duplicated');
+for(let number=1;number<=23;number++)assert(requirementIds.includes(`R-${String(number).padStart(3,'0')}`),`Original requirement ID was removed: R-${String(number).padStart(3,'0')}`);
+for(const id of ['R-024','R-025','R-026'])assert(requirementIds.includes(id),`New Oasis requirement is missing: ${id}`);
 const roles=files.filter(x=>x.startsWith('.codex/agents/')&&x.endsWith('.toml'));
 assert(roles.length===7,'Expected seven scoped native role adapters');
 for(const rel of roles){
@@ -103,6 +123,7 @@ for(let i=0;i<pagePaths.length;i++){
   assert(html.includes('id="theme-select"') && ['sunset','arcade','meadow'].every(theme=>html.includes(`value="${theme}"`)),`Three-theme control missing: ${rel}`);
   assert(html.includes('class="motion-toggle"') && html.includes('aria-pressed="false"'),`Motion control missing: ${rel}`);
   assert(html.includes('Content-Security-Policy') && html.includes("connect-src 'none'"),`Static-site CSP missing: ${rel}`);
+  assert(html.includes('The Oasis') && !html.includes('RPO HUB'),`Generated route has stale product branding: ${rel}`);
   assert((html.match(/<script\b/g)||[]).length===1 && /<script src="(?:\.\/|\.\.\/)?app\.js" defer><\/script>/.test(html),`Unexpected or inline script in generated page: ${rel}`);
   for(const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){
     const dest=match[1].split(/[?#]/,1)[0];
@@ -116,11 +137,17 @@ for(let i=0;i<pagePaths.length;i++){
   if(i===0){
     const portalCount=(html.match(/class="portal-card portal-/g)||[]).length;
     assert(portalCount===4,`Home portal map has ${portalCount} destinations, expected four`);
-    assert(html.includes('A project map — not a playable world'),'Home must distinguish the concept map from an existing game');
+    assert(html.includes('An information-site map — not a playable Hub'),'Home must distinguish the project map from an existing app Hub');
+    assert(html.includes('central Hub') && html.includes('worlds'),'Home route must describe the broad planned Oasis experience');
   }
 }
+const roadmapHtml=await readFile(path.join(dist,'roadmap/index.html'),'utf8');
+for(const item of data.milestones){
+  assert(roadmapHtml.includes(item.id) && roadmapHtml.includes(item.title),`Generated roadmap is missing structured milestone: ${item.id}`);
+  assert(roadmapHtml.includes(`<span class="badge ${item.state}">${item.state}</span>`),`Generated roadmap status does not match structured state: ${item.id}/${item.state}`);
+}
 const release=JSON.parse(await readFile(path.join(dist,'release.json'),'utf8'));
-assert(release.project==='RPO HUB' && release.schemaVersion===1 && release.revision,'Release metadata missing project/revision');
+assert(release.project==='The Oasis' && release.schemaVersion===1 && release.revision,'Release metadata missing project/revision');
 let expectedRevision=process.env.GITHUB_SHA||'local-uncommitted';
 if(!process.env.GITHUB_SHA){
   try{

@@ -1,4 +1,4 @@
-> Adoption checkpoint 2026-10-15: D-015 is now Apache-2.0 for new maintained files; D-020 repository is killacalione/RPO-HUB with RPO HUB as working name; D-021 REA is available and browser replay succeeded in this task. Historical rows below preserve prior state. F0 foundation precedes S1.
+> Adoption checkpoint 2026-10-15: D-015 is Apache-2.0 for new maintained files. D-020's former RPO HUB working name and D-035's original repository selection are historical; the owner has now selected **The Oasis** and an in-place repository rename to `killacalione/The-Oasis`. The additions below clarify the whole-product Hub experience while preserving earlier creator requirements and decision rows. F0 remains verified; F1 establishes the product definition before S1.
 
 # Decision log
 
@@ -62,6 +62,12 @@ Owner chooses personal-space visibility at creation (D-031). Added proposed P-01
 
 Owner extends the developer workflow to multiple agents and cloud/local models (D-032). Prepared portable workflow, handoff and state/capability records (P-015). Existing role text/TOML mirrors and bootstrap preserved. Copilot free/student manual-model limitation and Codex/Hermes bridge documentation mismatch are source observations, not tested local configurations. No client, API budget, model download or agent bridge configured.
 
+## The Oasis clarification, 2026-10-15
+
+The owner selected the name **The Oasis** and clarified that the product is a central launch/community Hub where people can arrive, find other worlds, make a Home, personalize a player-owned avatar and create worlds themselves. This supersedes the former working brand and corrects how the earlier creator-first focus is scoped; it does not erase R-011, D-010, D-022 or the coding/creation requirements. New accounts first create/select an avatar and arrive in the Hub. Return preferences apply after that first arrival. Exact resume, avatar compatibility and explicit recovery are requirements for future product work. A proposed local S1 demonstration is not a real account, durable online location or access grant.
+
+The owner separately selected an **in-place** migration of the existing repository and Pages identity. GitHub's current official rename guidance says ordinary repository references/Git traffic redirect but project Pages URLs are an exception; GitHub Desktop documents updating the local primary remote. Therefore migration, the new deployed Pages base and live revision require direct verification. See current primary source notes S105–S109 and task evidence in WORK-STATE.
+
 ## Foundation decisions, 2026-10-15
 
 | ID | Decision | Evidence |
@@ -70,3 +76,10 @@ Owner extends the developer workflow to multiple agents and cloud/local models (
 | D-034 | Use Apache-2.0 for new maintained project code/contributions | Explicit owner selection |
 | D-035 | Create public killacalione/RPO-HUB | Explicit owner selection |
 | D-036 | Merge both packages into the top-level project-foundation-new-project folder, retaining meaningful differences and removing accidental duplicates | Current owner instruction |
+| D-037 | Product name is **The Oasis**; RPO HUB remains a historical working/repository name | Explicit owner selection in current conversation, 2026-10-15 |
+| D-038 | The product is a central community launch/social Hub connecting player identity, Home, discovery, community worlds, customization and creation; creation is not the entire product | Owner clarification in current conversation, 2026-10-15; recorded as R-024 |
+| D-039 | New accounts create/select an avatar and first spawn in the Hub; the dashboard is available in that experience and first arrival cannot be bypassed | Owner-approved product foundation plan, 2026-10-15; future requirement only |
+| D-040 | After the first Hub arrival, returning entry supports Resume (default), Always Hub and Always Home, with Home unavailable until created | Owner-approved product foundation plan, 2026-10-15; future requirement only |
+| D-041 | The player owns avatar/outfit choice; worlds cannot silently replace it. Incompatible appearance blocks entry or asks the player explicitly | Owner-approved product foundation plan, 2026-10-15; future requirement only |
+| D-042 | Resume preserves world/version, coordinate frame, exact XYZ/facing and confirmed save revision; only acknowledged durable saves count, and failure preserves the record with explicit recovery options | Owner-approved product foundation plan informed by current browser lifecycle sources S109–S110; future behavior, not implemented |
+| D-043 | Rename the existing public repository in place to `killacalione/The-Oasis`, update the local remote and migrate Pages to the new project path, preserving repository history/protection/provenance | Explicit owner selection in current conversation, 2026-10-15; execution evidence belongs in WORK-STATE/VERIFY |

@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions and ideas
-    url: https://github.com/killacalione/RPO-HUB/discussions
+    url: https://github.com/killacalione/The-Oasis/discussions
     about: Discuss direction before proposing a scoped task.
   - name: Private security report
-    url: https://github.com/killacalione/RPO-HUB/security/advisories/new
+    url: https://github.com/killacalione/The-Oasis/security/advisories/new
     about: Keep vulnerabilities and sensitive evidence private.

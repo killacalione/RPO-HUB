@@ -1,29 +1,31 @@
 {
   "schemaVersion": 1,
-  "project": "RPO HUB",
-  "updated": "2026-10-15",
-  "stage": "Community foundation",
-  "summary": "An ambitious, community-built hub for code-created worlds. The public project is laying its foundation; application features, online social spaces and published worlds remain planned.",
-  "repository": "https://github.com/killacalione/RPO-HUB",
+  "project": "The Oasis",
+  "updated": "2026-10-16",
+  "stage": "F1 — The Oasis foundation",
+  "summary": "The Oasis is planned as a persistent community hub: arrive in a central Hub, find worlds made by others, personalize a player-owned avatar and Home, or create a world. Today the public project is defining the experience and foundation; the product itself is not live.",
+  "repository": "https://github.com/killacalione/The-Oasis",
   "currentWork": [
-    {"title": "One project, one source of truth", "state": "verified", "detail": "Two planning packages consolidated by content, with earlier requirements preserved and original inputs archived locally.", "evidence": "docs/provenance/MERGE-REPORT.md"},
-    {"title": "A place to contribute", "state": "verified", "detail": "Public source, contributor guidance, conduct, governance, Discussions and private security reporting are available.", "evidence": "CONTRIBUTING.md"},
-    {"title": "Progress that follows the source", "state": "verified", "detail": "Reviewed status data generates this site. Main-branch validation and Pages deployment passed with matching live source metadata.", "evidence": "VERIFY.md"},
-    {"title": "A map of the project", "state": "verified", "detail": "Five original, static information routes and three selectable visual themes are implemented; local build and browser evidence is recorded in VERIFY.md. The live Pages site updates only after a maintainer merges to main.", "evidence": "VERIFY.md"}
+    {"title": "One portable Oasis experience blueprint", "state": "verified", "detail": "Hub-first arrival, returning choices, player-owned avatar, Home, discovery, creation, exact resume and explicit recovery are recorded as requirements and proposals; application behavior has not started.", "evidence": "docs/planning/OASIS-EXPERIENCE.md"},
+    {"title": "A traceable phased plan", "state": "verified", "detail": "F0–F1 and S1–S5 have dependencies, stable task IDs, acceptance gates and explicit unknowns; no dates or percentages are invented.", "evidence": "docs/planning/ROADMAP.md"},
+    {"title": "A place to contribute", "state": "verified", "detail": "Public source, contribution guidance, governance, conduct, Discussions and private security reporting are available.", "evidence": "CONTRIBUTING.md"},
+    {"title": "The Oasis project identity", "state": "implemented", "detail": "The existing public repository has been renamed in place and the local origin points to it. New-brand Pages source and the live migrated revision still await protected publication evidence.", "evidence": "docs/planning/WORK-STATE.md"},
+    {"title": "Progress that follows the source", "state": "implemented", "detail": "The Oasis status and five-page site source are implemented. The protected main checks and Pages deployment for this new source still need live verification.", "evidence": "docs/planning/WORK-STATE.md"}
   ],
   "milestones": [
-    {"id": "F0", "title": "Community foundation", "state": "verified", "detail": "Repository, project documents, contributor workflow and progress site."},
-    {"id": "S1", "title": "Create, personalize, travel", "state": "planned", "detail": "Local/browser coding, interpreted world scripts, two original scenes and recoverable local saves."},
-    {"id": "S2", "title": "Shared rooms and text", "state": "planned", "detail": "Authoritative state, membership and tested access boundaries."},
-    {"id": "S3", "title": "Proximity and party voice", "state": "planned", "detail": "Media lifecycle, routing, resource limits and forbidden-delivery tests."},
-    {"id": "S4", "title": "Trusted world publishing", "state": "planned", "detail": "Validated immutable releases, revocation, rollback and quarantine."},
-    {"id": "S5", "title": "Public readiness", "state": "blocked", "detail": "Eligibility, privacy, rights, real-device evidence and sustainable operations must be established."}
+    {"id": "F0", "title": "Existing community foundation", "state": "verified", "detail": "Consolidated project, provenance, GitHub contribution workflow and evidence-led Pages site."},
+    {"id": "F1", "title": "The Oasis definition", "state": "implemented", "detail": "Hub-centered product blueprint, requirement/decision traceability, portable contributor guidance and in-place repository migration are implemented; protected publication and live Pages verification remain separate evidence gates."},
+    {"id": "S1", "title": "Internal local Oasis proof", "state": "planned", "detail": "Local Hub/dashboard/avatar/Home entry plus dual-authoring World SDK, interpreted guest runtime, two original scenes, player-owned personalization, exact resume and recoverable local save/export."},
+    {"id": "S2", "title": "Accounts and shared core", "state": "planned", "detail": "Stage durable account/profile/location/Home ownership and eligible discovery, then authoritative shared Hub/rooms/text with changed-client permission tests."},
+    {"id": "S3", "title": "Proximity and party voice", "state": "planned", "detail": "Authorized media routes, recipient/lifecycle behavior, resource limits and forbidden-delivery evidence."},
+    {"id": "S4", "title": "Trusted world publishing", "state": "planned", "detail": "Validated compatible immutable releases, current grants, direct publishing, rollback, quarantine and revocation."},
+    {"id": "S5", "title": "Public readiness", "state": "blocked", "detail": "Worldwide all-age eligibility, privacy, accessibility, rights, actual devices, staffed operations and sustainable finances require evidence before release."}
   ],
   "contributionAreas": [
-    {"title": "Research", "detail": "Verify assumptions using primary sources and make the tradeoffs clear."},
-    {"title": "Accessibility", "detail": "Review journeys, keyboard alternatives, errors and readable project information."},
-    {"title": "Architecture", "detail": "Help define small, testable SDK and runtime boundaries before implementation."},
-    {"title": "Documentation", "detail": "Improve acceptance criteria, contributor onboarding and evidence quality."}
+    {"title": "Research", "detail": "Verify assumptions with current primary sources and make evidence, confidence and tradeoffs clear."},
+    {"title": "Accessibility", "detail": "Review first arrival, consistent navigation, keyboard alternatives, recovery and readable project information."},
+    {"title": "Architecture", "detail": "Help define small, testable identity, avatar, Home, world and runtime boundaries before implementation."},
+    {"title": "Documentation", "detail": "Improve acceptance criteria, contributor onboarding, traceability and evidence quality."}
   ],
-  "limits": "No world editor, playable worlds, public accounts, multiplayer, voice service or product-side community space is available yet. Planned features and research do not establish release, device, security or child-safety readiness."
+  "limits": "No real login, playable Hub/Home/worlds, avatar wardrobe, world directory, online identity, multiplayer, chat, voice or user publishing exists yet. S1 application work is unstarted. Proposals and research do not establish runtime security, accessibility conformance, device coverage, age/privacy protection, legal readiness or public operations."
 }

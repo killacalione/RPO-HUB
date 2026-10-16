@@ -1,6 +1,6 @@
 # Community Code of Conduct
 
-RPO HUB welcomes respectful participation across backgrounds and experience levels. Help people learn, discuss evidence, give constructive feedback and respect personal boundaries.
+The Oasis welcomes respectful participation across backgrounds and experience levels. Help people learn, discuss evidence, give constructive feedback and respect personal boundaries.
 
 Harassment, threats, hate, sexualized conduct, doxxing, impersonation, spam and sharing private or exploitative material are prohibited. Do not ask participants for ages, identity documents or sensitive personal details in public project channels. Keep all public project spaces appropriate for a broad audience.
 

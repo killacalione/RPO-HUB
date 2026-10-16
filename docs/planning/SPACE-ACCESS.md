@@ -2,6 +2,8 @@
 
 **Requirement, interview round six on 2026-10-14:** The owner chooses visibility when creating the space. **Proposed:** Private, Invite-only and Public modes, later owner changes, separate visit/edit permissions and server enforcement below. The exact mode semantics/defaults are design proposals, not owner-confirmed extra policies or implemented features.
 
+For The Oasis this is the player’s personal **Home**. Home creation is optional and distinct from the required first Hub arrival. **Always Home** is a returning-arrival preference only after a Home exists; it cannot bypass first arrival. A visibility choice in local S1 is saved requested intent, not a live online listing, owner record or access grant. See [OASIS-EXPERIENCE](OASIS-EXPERIENCE.md).
+
 ## Proposed modes
 
 | Mode | Ordinary visitors | Discovery |
@@ -26,7 +28,7 @@ Check current permission before giving protected room data, presence, text or wo
 
 Later mode changes are proposed. Update the policy version and the directory/access record consistently; re-evaluate active members and pending joins. Public-to-Private removes the listing, denies further non-owner entry/data and ends now-disallowed visits. Public-to-Invite-only keeps only current eligible accepted invitees. A revoked invite cannot be replayed or used to reconnect. Cached client/UI grants are not authority.
 
-Space-scoped presence/text/voice delivery ends for removed visitors; offer an authorized Return home or hub path. Party voice follows its own membership and eligibility, so a space becoming private does not silently change the party's audience. Show the actual outgoing audio route. Existing delivered/downloaded copies cannot be recalled merely by changing a setting. Measured revocation timing, cache/media implementation and failure behavior remain unverified; no immediate-complete-erasure guarantee.
+Space-scoped presence/text/voice delivery ends for removed visitors; offer a persistent Return to Hub path and a separate Home route when the owner has created one. Party voice follows its own membership and eligibility, so a space becoming private does not silently change the party's audience. Show the actual outgoing audio route. Existing delivered/downloaded copies cannot be recalled merely by changing a setting. Measured revocation timing, cache/media implementation and failure behavior remain unverified; no immediate-complete-erasure guarantee.
 
 ## S1 versus online evidence
 
@@ -34,4 +36,8 @@ S1 is a no-account local prototype. It can show the creation selector and preser
 
 Future online tests use at least owner, invited and uninvited clients. Exercise each mode; edited owner/space IDs; protected asset/configuration reads; expired/copied/replayed invites; simultaneous join and visibility change; active-session revocation/reconnect; disallowed cohort and block cases; world voice and separately authorized party continuity. Inspect actual denied data/media delivery with changed clients. Keep failed access generic so a private listing cannot be enumerated. All app/online tests are unexecuted.
 
-See [demo design](DEMO-EXPERIENCE.md), [S1 brief](S1-IMPLEMENTATION-BRIEF.md), [age policy](AGE-POLICY.md), [voice](VOICE-DESIGN.md), [trusted publication](TRUSTED-PUBLISHING.md) and [sources](../research/SOURCES.md).
+## Home and player-owned appearance
+
+Home is one destination linked to the player identity; it is not the account itself or the world template. Store Home settings, requested visibility, avatar/outfit entitlements, returning preference and confirmed location separately. Worlds may declare appearance compatibility, but cannot silently change the player’s selected avatar/outfit while they are in Home or visiting another world. Incompatibility blocks entry or requests an explicit player decision. A Home/world change cannot mint appearance items or overwrite account identity. These boundaries are requirements; no account, inventory, Home ownership or online grant exists in S1.
+
+See [experience blueprint](OASIS-EXPERIENCE.md), [demo design](DEMO-EXPERIENCE.md), [S1 brief](S1-IMPLEMENTATION-BRIEF.md), [age policy](AGE-POLICY.md), [voice](VOICE-DESIGN.md), [trusted publication](TRUSTED-PUBLISHING.md) and [sources](../research/SOURCES.md).

@@ -1,15 +1,22 @@
-> Foundation adoption 2026-10-15: current root/work ledger supersedes historical repository and tool-availability statements. REA and Context7 are available here; S1 remains unstarted. No new configuration is implied.
+> Foundation adoption 2026-10-16: this is a portable future assignment; check the current session's tool availability in WORK-STATE.md. S1 remains unstarted. No client configuration is implied.
 
-# Portable S1 implementation handoff
+# Portable future S1 implementation handoff
 
-Prepared after seven interview rounds, 2026-10-14. Use this with Codex, Hermes, Copilot or another capable coding agent in the actual project workspace. It is a copyable implementation assignment, not evidence of execution. The planning package has no application. The owner prefers cloud models and may switch clients/providers or use compatible local models.
+> **Not the current assignment.** This file preserves a future application prompt for portability. F1 (The Oasis definition/foundation) must be complete first, and the owner must separately authorize the S1 scope before any agent runs the prompt or writes application code. Current task/owner/writer are recorded in [WORK-STATE](WORK-STATE.md). File presence is not authorization.
+
+Prepared after seven interview rounds, 2026-10-14 and aligned to the Oasis product definition on 2026-10-16. Use this with Codex, Hermes, Copilot or another capable coding agent in the actual project workspace. It is a copyable implementation assignment, not evidence of execution. The planning package has no application. The owner prefers cloud models and may switch clients/providers or use compatible local models.
 
 ## Entry prompt
 
 ```text
+Use this assignment only after the owner has explicitly authorized S1 following
+the F1 foundation gate. If F1 is still active or no S1 authorization exists,
+stop after read-only inspection and report that the current task is foundation.
+
 Implement the internal S1 prototype of this open-world hub project. Work from
 the current files and user instructions; preserve existing work and recorded
 requirements. Read AGENTS.md, PROJECT-BRIEF.md, docs/planning/WORK-STATE.md,
+docs/planning/OASIS-EXPERIENCE.md, docs/planning/ROADMAP.md,
 docs/planning/S1-IMPLEMENTATION-BRIEF.md, docs/planning/DEMO-EXPERIENCE.md,
 docs/planning/SPACE-ACCESS.md and the relevant architecture/security/testing
 docs. Use roles/implementation-engineer.md as the portable scoped role when
@@ -42,8 +49,19 @@ import. Separate immutable template/source from validated personal state.
 Private/Invite-only/Public semantics and scene themes are design proposals;
 there are no real online account or access grants in this local prototype.
 
+Demonstrate the local Oasis onboarding path before the two-scene loop: a new
+local profile chooses an avatar, first spawns in the Hub with its dashboard,
+and may create a personal Home with requested visibility. Keep a persistent
+Return to Hub action. Home is a separate destination and is available only
+after creation. Test Resume, Always Hub and Always Home only after first
+arrival; restore the confirmed world/version, coordinate frame, exact XYZ,
+facing and save revision. Preserve avatar/outfit ownership and local Home
+intent through save/reload/export/import. On denied or invalid resume, offer
+Retry, Hub, or Home only when it exists; do not erase the saved record.
+
 Handle invalid/duplicate/failed travel, failed saves and corrupt imports
-with usable recovery and a persistent Return home. Test real hostile guest
+with usable recovery and a persistent Return to Hub. Home is a separate
+optional destination, not a synonym for the Hub. Test real hostile guest
 cases, bridge/renderer budgets, resource disposal, bundle parity and actual
 desktop keyboard/reduced-motion UI behavior. Record exact commands and
 results. An unavailable device/tool/dependency is an explicit gap, never a

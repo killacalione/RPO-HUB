@@ -1,21 +1,22 @@
-# RPO HUB
+# The Oasis
 
-An open-source project exploring a connected hub of code-created worlds, personal spaces and social experiences.
+**The Oasis is an open-source project for a welcoming, persistent hub that connects people to personal spaces and community-made worlds.** People will be able to arrive in a central Hub, find a world to visit, personalize an avatar and Home, or build a world of their own. Creation is a core capability inside the larger hub experience; people should not need to write code just to visit.
 
-**Current stage: community foundation.** The application is not implemented. The next application milestone is a bounded, local S1 creator prototype. This repository publishes requirements, research, work proposals and verified progress before that build begins.
+## What exists today
 
-[Project progress](https://killacalione.github.io/RPO-HUB/) · [Roadmap](docs/planning/ROADMAP.md) · [Contribute](CONTRIBUTING.md) · [Discussions](https://github.com/killacalione/RPO-HUB/discussions) · [Issues](https://github.com/killacalione/RPO-HUB/issues)
+The project is in **F1 — product definition and community foundation**. This public repository contains the product blueprint, phased requirements and proposals, community contribution process, and a static pixel-art progress site. It does not provide real sign-in, a playable Hub or Home, a wardrobe, user-made world hosting, chat, voice or any other online product service. S1 application implementation has not started. The site’s progress data and [work ledger](docs/planning/WORK-STATE.md) distinguish implemented source, verified checks, planned work and remaining gaps.
 
 ## Start here
 
-- Read the [project brief](PROJECT-BRIEF.md), [requirements](docs/project/PRD.md) and [decision log](docs/planning/DECISIONS.md).
-- Check [current work](docs/planning/WORK-STATE.md) and the [S1 implementation brief](docs/planning/S1-IMPLEMENTATION-BRIEF.md).
-- Propose an improvement through Discussions; use an Issue for work with a clear outcome and acceptance criteria.
-- Follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report security concerns through [private reporting](SECURITY.md).
+- New to the project? Read the [project brief](PROJECT-BRIEF.md) and [experience blueprint](docs/planning/OASIS-EXPERIENCE.md).
+- Want to see what comes next? Read the [phased roadmap and acceptance gates](docs/planning/ROADMAP.md) and [requirements](docs/planning/REQUIREMENTS.md).
+- Want current evidence? Start with [Progress](https://killacalione.github.io/The-Oasis/progress/) and [VERIFY](VERIFY.md).
+- Want to contribute? Read [CONTRIBUTING](CONTRIBUTING.md), then discuss ideas or propose a small, testable issue.
+- Looking for engineering boundaries? Follow [AGENTS.md](AGENTS.md), [architecture](docs/project/Architecture.md), [security](docs/project/security.md), [testing](docs/project/testing.md) and the task-specific handoff in [WORK-STATE](docs/planning/WORK-STATE.md). Use `roles/implementation-engineer.md` as the portable implementation role when assigned; native Codex prompts are client adapters, not portable instructions.
 
-## Run the foundation locally
+## Run the project information site
 
-Requires Node.js 24 LTS or newer. No dependency installation is needed.
+Requires Node.js 24 or newer. No dependency installation is needed.
 
 ```sh
 npm run check
@@ -23,18 +24,16 @@ npm run build
 npm run dev
 ```
 
-Open the URL printed by the local server. The site is generated from `data/project-status.json`; it publishes no accounts, comments, telemetry or application runtime. Builds record their source commit in `release.json`. GitHub Actions validates pull requests and deploys approved `main` changes to Pages.
+Open the URL printed by the local server. The site reads `data/project-status.json`, generates five static routes and publishes no application accounts, comments, telemetry or product runtime. GitHub Actions validates pull requests and deploys only generated `dist/` from `main`.
 
-## Working with GitHub Desktop
+## Contribute
 
-Choose **File → Add local repository** and select this folder. Work on a branch, commit a focused change, publish the branch and open a pull request. `origin` points to this repository. Required checks run on every pull request; `main` uses the repository's reviewed change workflow.
+Use the public [Discussions](https://github.com/killacalione/The-Oasis/discussions) for questions and early proposals. Use [Issues](https://github.com/killacalione/The-Oasis/issues) for bounded work with a clear outcome and acceptance criteria. Changes follow the protected `main` pull-request workflow. Read the [Code of Conduct](CODE_OF_CONDUCT.md); report vulnerabilities through [private security reporting](SECURITY.md).
 
-## Project boundaries
+## Product boundaries
 
-The intended first online release includes public worlds, text/proximity/party voice and children, teens and adults. Those are requirements under research, not live services or readiness claims. S1 has no accounts, online sharing, payments or recording. See [public-release gates](docs/planning/PUBLIC-RELEASE.md).
+The intended first public release serves eligible children, teens and adults and includes public world discovery, text/proximity/party voice and trusted direct publishing. These are requirements under research, not live services or launch-readiness claims. S1 is an internal local proof with no real accounts, online publishing, payments, recording or child-data collection. The exact stack and online providers remain unselected until evidence supports a scoped decision.
 
 ## Provenance and license
 
-This foundation combines two supplied planning packages. [The consolidation report](docs/provenance/MERGE-REPORT.md) explains identical files, meaningful differences and preserved legacy requirements. Original inputs and the earlier prototype remain preserved locally; unreviewed input artifacts are excluded from publication.
-
-New maintained project files and contributions use [Apache-2.0](LICENSE). Third-party assets and code must retain their own licenses and attribution. See [NOTICE](NOTICE) and [governance](GOVERNANCE.md).
+This foundation consolidates two supplied planning packages. The [merge report](docs/provenance/MERGE-REPORT.md) describes identical files, meaningful differences and preserved legacy requirements. Original inputs and an earlier prototype remain preserved locally; unreviewed input artifacts are excluded from publication. New maintained files and accepted contributions use [Apache-2.0](LICENSE). Third-party assets and code retain their own licenses and attribution; see [NOTICE](NOTICE) and [governance](GOVERNANCE.md).

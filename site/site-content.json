@@ -1,23 +1,23 @@
 {
   "home": {
-    "intro": "A community-built hub for creating, personalizing, and exploring code-created worlds — with connection as a future part of the journey.",
-    "now": "Today: building the shared foundation, in public."
+    "intro": "The Oasis is planned as a persistent community hub: start in a central Hub, discover worlds others have made, personalize an avatar and Home, or create worlds of your own. Visitors won't need to code.",
+    "now": "Today: defining the foundation in public. Sign-in and playable spaces are not live."
   },
   "project": {
     "pillars": [
-      {"title": "Create", "detail": "World makers shape spaces with code and share ideas through an open, versioned project format."},
-      {"title": "Personalize", "detail": "Visitors make approved choices that belong to their own saved experience, not the shared world template."},
-      {"title": "Explore", "detail": "Travel between imaginative places is the first proposed demo loop. Community features come later, after their boundaries are proven."}
+      {"title": "Arrive together", "detail": "A new account will create or select an avatar and start in the central Hub, with a launch dashboard available to find a next step."},
+      {"title": "Make it yours", "detail": "A player will control their avatar and outfit, open a personal Home, and carry their choices between compatible worlds."},
+      {"title": "Explore and create", "detail": "Find worlds made by the community or build one with code. Visitors can explore without programming; creator tools are one path inside the larger Oasis."}
     ],
-    "next": "The proposed next milestone is a deliberately small local prototype: one project contract, a pair of original scenes, a safe interpreted-script boundary, and recoverable personalization. The S1 brief records its acceptance tests; implementation has not started."
+    "next": "The current work is F1: define the complete Hub-first experience, trace requirements and unknowns, and make the foundation easy to contribute to. Only after that gate does a separately authorized S1 propose a local proof with a Hub/dashboard, player-owned appearance, optional Home, two original worlds, exact confirmed-location resume, recoverable saves, and an independently stoppable interpreted runtime with bounded host commands and hostile-case tests. Application implementation has not started."
   },
   "progress": {
-    "intro": "The project is at its community-foundation stage. Here is the work that has evidence today, with source links you can inspect."
+    "intro": "The project is defining The Oasis in public. Here is the foundation work with evidence you can inspect; planned product features are labeled clearly."
   },
   "roadmap": {
-    "intro": "RPO HUB has a wide ambition. The roadmap keeps the next testable outcome visible without inventing dates, percentages, or finished capabilities."
+    "intro": "The Oasis has a broad journey: establish a clear product foundation, prove the local experience, then earn each online capability with its own evidence. No dates or percentages are promised."
   },
   "community": {
-    "intro": "RPO HUB is being shaped in public, one careful step at a time. You can help without signing up for an application that does not exist yet."
+    "intro": "The Oasis is being shaped in public, one careful step at a time. You can help with research, accessibility, architecture or documentation before a playable application exists."
   }
 }

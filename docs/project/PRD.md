@@ -1,21 +1,39 @@
 # Product requirements
 
-Updated 2026-10-15. Requirement = recorded intent; Verified = observed with dated evidence; Proposed = candidate; Unknown = unresolved. Current work establishes the community foundation before application code.
+Updated 2026-10-15. **Requirement** records owner intent; **Verified** requires dated implementation evidence; **Proposed** is a candidate; **Unknown** is unresolved. The current work is the F1 product/contributor foundation. The application is not implemented.
 
 ## Product intent
 
-RPO HUB is an intended open-source hub of code-created worlds, personal spaces, avatars and social experiences. Visitors need not code. The [requirement register](../planning/REQUIREMENTS.md) preserves R-001 through R-023; the [decision log](../planning/DECISIONS.md) and [v0.1 specification](../planning/V0.1-SPEC.md) govern current scope. The [legacy crosswalk](../provenance/LEGACY-CROSSWALK.md) retains older requirement IDs.
+**The Oasis is a persistent community hub connecting people to a central Hub, player-owned identity and personal Home, community-made worlds, customization and code-based creation.** People may discover and visit worlds made by others or create worlds of their own; visiting does not require programming. World making remains important without defining the entire product. The owner selected The Oasis as the product name on 2026-10-15; RPO HUB is retained as the former name in historical records. See the canonical [experience blueprint](../planning/OASIS-EXPERIENCE.md).
+
+## Required arrival and ownership behavior
+
+- **First arrival:** create an account, create or select an avatar, then first spawn in the Hub with the dashboard available. Direct links, a Home preference or dashboard access cannot skip the first Hub arrival. Future account/system work remains unimplemented.
+- **Returning arrival:** Resume the last confirmed exact location by default. After first arrival, permit **Resume**, **Always Hub** or **Always Home**. Home must exist before Always Home can be selected. The dashboard remains readily available from each destination.
+- **Exact resume:** preserve immutable world/version reference, coordinate frame, exact X/Y/Z, facing and confirmed save revision. Validate current access, version compatibility, appearance support and coordinates before entry. On failure preserve the saved record and offer Retry, Hub and Home where it exists.
+- **Avatar ownership:** the player controls avatar and outfit. World code cannot silently substitute, strip or overwrite the selection. Block entry or ask the player explicitly if a world cannot support the chosen appearance.
+- **Separation:** account identity/appearance, entitlements, arrival preference, confirmed location, personal Home, immutable world source, validated per-player world state and authorization are distinct records/boundaries. Guest scripts cannot mutate account records or grant access.
+
+These are product requirements, not current UI, login, persistence or authorization behavior. The S1 local profile is not a real account.
 
 ## Ordered delivery
 
-1. **Foundation, current:** consolidated documents, public/local Git, Desktop workflow, contribution/security/governance guidance, validated main-only Pages progress.
-2. **S1, planned:** one SDK/project contract through local and browser authoring; interpreted guest code; two original scenes; explore, personalize, save/export, portal travel, landmark interaction and return with choices intact. Requested visibility is a local preference only.
-3. **S2–S5, planned:** authoritative shared rooms/text, proximity/party voice, direct trusted publishing, then public operation after eligibility, privacy, rights and operational evidence.
+1. **F0 — Existing foundation, verified:** consolidated source/provenance, public GitHub collaboration, contributor rules, protected PR checks and a curated static progress site.
+2. **F1 — The Oasis definition, current:** experience blueprint, append-only owner decisions, traceable phase gates, agent/contributor reading paths, repository/Pages identity migration and tested status consistency.
+3. **S1 — Internal local proof, planned:** one versioned World SDK contract and both coding paths; isolated interpreted guest scripts; two original worlds; local Hub/dashboard/avatar/Home demonstrations; personal choices and visibility request; exact location save/resume; recovery, export/import and meaningful hostile/resource/UI checks. No online accounts/grants/services.
+4. **S2 — Accounts and shared core, planned:** stage secure accounts/profile/location/Home ownership and eligible discovery, then authoritative shared Hub/rooms/text with changed-client permission tests.
+5. **S3 — Proximity and party voice, planned:** authorized routes, lifecycle, recipient denial and resource evidence.
+6. **S4 — Trusted publishing, planned:** validated compatible worlds, current grants, direct release, rollback, quarantine and revocation.
+7. **S5 — Public readiness, blocked on evidence:** the intended worldwide, all-age operation requires actual age/guardian, region, privacy, accessibility, rights, staffed operations and sustainable funding proof.
 
-The first public release is intended for children, teens and adults, with child age-group communication and worldwide availability under reviewed eligibility. These remain requirements, not implemented access, demographic assurance or global legal clearance.
+The [roadmap](../planning/ROADMAP.md) owns dependencies, stable task IDs and exit criteria. The [requirements register](../planning/REQUIREMENTS.md) preserves R-001–R-023 and records the dated scope correction without rewriting history; [DECISIONS](../planning/DECISIONS.md) is append-only. The [legacy crosswalk](../provenance/LEGACY-CROSSWALK.md) preserves older IDs.
 
-## Gates and deferred ideas
+## Public scope and unresolved decisions
 
-Exact ages/cohorts, guardian process, countries/features, operator, trust grants, staffing, costs and real device support remain open. Payments, tokens, payouts, AI/personas, native/XR breadth, federation and adult-only areas remain later scope. Any adult-only functionality is separately gated and excluded from all-age discovery. No high-risk functionality is authorized by an inactive backlog entry.
+The first public release is intended for eligible children, teens and adults, worldwide, with public world discovery/sharing, text, proximity and party voice, and trusted direct publishing. These are recorded requirements, not live capabilities, globally cleared policy or proof of readiness. A public listing does not itself authorize entry; a user's avatar choice or Home visibility request does not grant access.
 
-Foundation acceptance: fresh checkout can check/build/serve without secrets or dependency installation; documentation links resolve; public progress comes from one structured status file; fork PR checks are read-only; deployment publishes only generated output from main; GitHub Desktop points at the same local/remote repository.
+Exact ages/cohorts, guardian process, country/features, account/auth provider, operator, trust grants, avatar/item compatibility contract, world discovery ranking, personal-space mode semantics, staffing, sustainable budget and device support remain Proposed or Unknown. Payments/tokens/payouts, AI/personas, native/XR breadth, federation, pets and adult-only features remain later scope. No backlog item authorizes those services or collection.
+
+## Foundation acceptance
+
+A fresh checkout can check/build/serve without secrets or dependency installation; humans and portable agent clients can find the correct next task from repository documents alone; requirement/status/roadmap consistency is checked; public progress has one structured source; untrusted fork checks are read-only; deployment publishes generated output from protected `main`; and the local GitHub Desktop remote corresponds to the renamed public repository. Site/theme/browser, PR and Pages evidence are recorded separately in [VERIFY](../../VERIFY.md) and [WORK-STATE](../planning/WORK-STATE.md).

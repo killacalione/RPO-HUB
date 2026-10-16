@@ -6,6 +6,6 @@ Product requirements and owner decisions live in the PRD and decision log. Archi
 
 `main` is the reviewed source of published project state. No application release or roadmap date follows automatically from a merged document. App security, child/privacy, operations and legal gates remain separate.
 
-Apache-2.0 governs new maintained repository files and accepted contributions. Third-party notices and asset rights remain separate; no trademark rights or approval to use RPO HUB branding are granted by that license. Any future CLA, DCO, sponsorship, payment mechanism or governance change must be proposed and documented first.
+Apache-2.0 governs new maintained repository files and accepted contributions. Third-party notices and asset rights remain separate; no trademark rights or approval to use The Oasis branding are granted by that license. Any future CLA, DCO, sponsorship, payment mechanism or governance change must be proposed and documented first.
 
 Additional maintainers should have a recorded scope, least-privilege access and an agreed review/incident role before invitations are sent. This task invites nobody and establishes no background agent or scheduler.

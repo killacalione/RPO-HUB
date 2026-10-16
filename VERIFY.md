@@ -10,6 +10,29 @@ npm run dev
 
 Input archive equality and merge counts are documented in [consolidation evidence](docs/provenance/MERGE-REPORT.md). Current publication requires clean public-file review, valid local links/role mirrors/status data, generated-only Pages artifacts, passing Actions, a matching live `release.json`, branch policy and the correct repository in GitHub Desktop.
 
+## The Oasis foundation closeout — 2026-10-16
+
+The source is being reviewed on `docs/the-oasis-foundation` at base revision `2a8aa57c4dd906d5126aa76a4bf0ccfaddd2db2f`, with origin `https://github.com/killacalione/The-Oasis.git`. Repository rename and main protection were already verified against GitHub. This checkpoint is local source evidence; Pages still serves the earlier release until the protected PR is merged and deployment is checked.
+
+### Product and research review
+
+- The canonical experience and F0–S5 gates now make the Hub/dashboard the center of the product, with creation as one path among discovery, avatar/Home personalization and eventual shared experiences. The first account arrives in the Hub; later sessions can resume, choose Always Hub or use an existing Home. Avatar appearance is player-owned, and guest scripts cannot control account records or grants.
+- Current platform references are recorded in [`docs/research/SOURCES.md`](docs/research/SOURCES.md). The migration uses GitHub's [repository rename guidance](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository), including its warning that the old project Pages URL is not redirected; the local GitHub Desktop remote procedure is documented by [GitHub Desktop](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/changing-the-remote-url-for-a-repository-in-github-desktop). Protected squash merge will use the CLI's [`--match-head-commit` guard](https://cli.github.com/manual/gh_pr_merge). Browser lifecycle and consistent-navigation sources remain linked as S109–S110 and S108.
+- The original R-001–R-023 requirements remain; R-024–R-026 are additive. The checker verifies retained IDs, uniqueness, stable roadmap task IDs, phase order and generated site/status agreement. Current S1 copy describes containment behavior and the hostile tests still required; it does not promise safe guest scripts.
+
+### Local checks and browser review
+
+- Environment: Node `v25.9.0`, npm `11.12.1`, Git `2.55.0.3`, PowerShell `7.6.5`; Codex desktop with the Codex in-app browser. `package.json` requires Node `>=24` and has no runtime dependencies.
+- `npm run check`: passed for 85 public files, seven role mirrors, status/content, scripts, five generated routes, theme/motion controls, local links and curated Pages output.
+- `npm run build`: passed; five generated route pages, shared controller/style, favicon, release JSON and `.nojekyll`; the dirty preview correctly labels its source `local-uncommitted`.
+- `git diff --check`: passed with Git line-ending conversion warnings only; no whitespace errors.
+- Browser viewport available in the in-app browser: **1008×1187 CSS pixels**. Home had `scrollWidth=1008`, `scrollHeight=1187`, so it fit exactly; Project, Progress, Roadmap and Community each scrolled vertically without horizontal overflow. All five routes showed the expected heading and `aria-current` navigation item, and all images loaded.
+- All four Home portal anchors were clicked and reached Project, Progress, Roadmap and Community. The five main navigation links were clicked in sequence; each reached its route and updated `aria-current="page"`. Tab focused the visible Skip to content link with a 3px outline; Enter moved to `#main`. Sunset Portal, Arcade Night and Handheld Meadow were each selected, persisted through Project navigation and reload, and the original Meadow preference was restored afterward.
+- Browser reported `prefers-reduced-motion: reduce`; the animation control was disabled and announced the system preference. Console warning/error capture was empty. **Normal-motion pause/resume could not be tested** in this browser session.
+- **Unavailable checks:** the Playwright MCP browser's CDP session timed out during connection. The CUA browser allowed direct route, click, keyboard and theme review but supplied no viewport override, so 1280×720, 1440×900, 375×812 and 200% zoom are not claimed. Native app windows were unavailable; GitHub Desktop is installed but not running, so its UI registration is not re-verified after the rename. Physical device, alternate browser-engine and broader assistive-technology checks remain open.
+
+The live site, Actions, matching release SHA, PR merge and branch cleanup are pending. F1 stays **implemented**, not verified, until all required evidence is available; S1 remains **planned and unstarted**.
+
 ## Observed results, 2026-10-15
 
 - `npm run check`: passed for 81 public files, status/link/script checks and seven native/card mirrors. Python 3.11 parsed all seven TOMLs independently.

@@ -1,10 +1,10 @@
 # Contributing
 
-RPO HUB is establishing its community foundation. Useful contributions include source-backed research, clearer acceptance criteria, accessibility review and improvements to this progress site. Application work begins from an agreed scoped Issue.
+The Oasis is establishing its product and community foundation. Useful contributions include source-backed research, clearer acceptance criteria, accessibility review and improvements to the progress site. Application work begins only from a separately scoped and authorized issue after F1.
 
 ## Propose and implement
 
-1. Read [current work](docs/planning/WORK-STATE.md), [requirements](docs/project/PRD.md) and [decisions](docs/planning/DECISIONS.md).
+1. Read [current work](docs/planning/WORK-STATE.md), the [experience blueprint](docs/planning/OASIS-EXPERIENCE.md), [requirements](docs/planning/REQUIREMENTS.md) and [decisions](docs/planning/DECISIONS.md).
 2. Discuss uncertain direction in Discussions. Open an Issue with the problem, sources, proposed outcome, boundaries and acceptance criteria before substantial work.
 3. Fork the repository or create a focused branch. With GitHub Desktop, select **New branch**, make a small change, commit, publish and create a pull request.
 4. Run `npm run check` and `npm run build` using Node 24 LTS or newer. No install is required.
