@@ -1,6 +1,16 @@
 # Current work state
 
-## Active task: pixel-art community hub
+## Active task: complete PR #4 and repository cleanup
+
+Owner authorization: refresh and merge the three dependency PRs and pixel-art PR, verify Pages, and delete only merged work branches. Dependency PRs #1–#3 have merged; their remote branches are gone. PR #4 is open at https://github.com/killacalione/RPO-HUB/pull/4 and has now been updated from remote main `a8a30f80c62fb21c0accde6edcd516cb58d934cb`; local source is synchronized at `9c3ddf4` before the completion correction.
+
+Writer: the current Codex desktop coordinator is the only source/document writer. An independent reviewer performed read-only source inspection and found no merge blocker. A chat model switch occurred externally; the current session identifies the GPT-6 family, with the exact route ID unexposed. No global machine/client settings were changed.
+
+Source root: the `project-foundation-new-project` directory in the local RPO-HUB workspace, Git origin `https://github.com/killacalione/RPO-HUB.git`. Owned files for this checkpoint: `scripts/build-site.mjs`, `VERIFY.md`, and this ledger. Remove the ignored `frame-ancestors` CSP meta directive, fill the PR description, and run the required local checks before committing. GitHub requires Foundation checks on an up-to-date branch, resolved conversations and zero peer approvals; administrator bypass is not used. Only squash merging is enabled, with automatic remote-head deletion. After merge, verify complete source-tree equality before removing the local feature branch; retain it if that proof fails.
+
+Current checks: branch update and local fast-forward succeeded with a clean starting tree. After removing the ignored CSP directive, `npm run check` passed for 84 public files, seven role mirrors, five generated routes, links, theme/motion controls and curated output; `npm run build` passed with five pages; `git diff --check` passed. Runtime remains Node `v25.9.0` / npm `11.12.1`. The first check rejected a personal absolute path in this ledger; the portable root above corrected it before commit. Final-head PR checks and post-merge deployment are pending, not claimed as passed. Next concrete step: commit/push this correction, wait for the new head's required Foundation check, squash-merge PR #4 without bypass, verify live revision/routes, synchronize main and remove the proven-merged feature branch. No application/S1 work is included. Existing REA, no-preference motion and physical-device coverage gaps remain explicit below. There are no active local QA/server processes to transfer.
+
+## Implementation checkpoint: pixel-art community hub
 
 Task recorded 2026-10-15 before implementation. Scope: replace the long foundation landing page with an original pixel-art Home map and Project, Progress, Roadmap and Community routes; add three session-persistent themes and a user-controlled, reduced-motion-aware animation; retain verified foundation status and curated Pages output. Local implementation and browser review are complete. S1 application work, merge and deployment are out of scope for this writer.
 

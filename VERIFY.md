@@ -23,6 +23,16 @@ Input archive equality and merge counts are documented in [consolidation evidenc
 
 Final publication updates only evidence/status labels. Its exact revision and deployment result are available from Git history, Actions and the live release record. Branch protection is established at bootstrap completion. No external fork PR, native-role loading, broad device/accessibility conformance, S1 hostile runtime, privacy or public-release readiness is claimed.
 
+## PR #4 completion checkpoint — 2026-10-16 UTC
+
+The owner authorized merge and branch cleanup after the earlier implementation checkpoint. Dependency PRs #1–#3 were each updated against then-current main, passed their refreshed Foundation check and merged. Their remote branches are absent. PR #4 now exists, and `gh pr update-branch 4 --repo killacalione/RPO-HUB`, `git fetch origin --prune`, and `git merge --ff-only origin/feat/pixel-art-community-hub` succeeded; source synchronized at `9c3ddf4` before this correction. Local main had been stale; remote main is `a8a30f80c62fb21c0accde6edcd516cb58d934cb`.
+
+Read-only review found no merge blocker in the site diff. It identified an ineffective `frame-ancestors` directive in a CSP meta element. That directive has been removed because it requires an HTTP response header; no anti-framing protection is claimed from this site's metadata. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors). Earlier captured console observations remain point-in-time evidence, not proof that all browsers accepted every directive.
+
+GitHub CLI works through the existing normal Windows user/keyring context; sandbox authentication returned HTTP 401. No credential or global configuration was changed. Required branch policy was read through that working route: strict Foundation checks, conversation resolution, administrator enforcement, no force-push/deletion of main and zero required peer approvals. Repository merge policy permits squash only and automatically deletes merged remote heads. Final check results and post-merge verification will be reported for their actual source revisions; a passing PR check does not prove deployment.
+
+The first completion-check run rejected a personal absolute source path added to the public ledger. It was replaced with a portable project-relative root before continuing; no personal path was committed. The corrected run of `npm run check` passed (84 public files, seven role mirrors, five routes, links, theme/motion and curated output); `npm run build` passed (five pages, correctly marked local-uncommitted while editing); `git diff --check` passed. Runtime: Node `v25.9.0`, npm `11.12.1`, PowerShell `7.6.5`. Final-head Node 24 Actions and live rollout remain separate gates after push/merge.
+
 ## Pixel-art project hub iteration — 2026-10-15
 
 Scope is the information site and curated Pages output only; S1 application development remains unstarted. The focused source branch starts at `0d6b0f29c8c1387cca14588455a2a06937da6c4e`; implementation commit is `8dd5822882be4d8493491be9c205ce7c3bf09b87` before this evidence/hand-off follow-up. Local preview builds label a dirty tree `local-uncommitted`; clean, CI and live builds retain their exact source SHA. A PR/main merge is required before public Pages changes.

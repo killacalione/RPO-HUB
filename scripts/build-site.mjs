@@ -63,7 +63,7 @@ function documentPage(current, title, description, inner) {
   return `<!doctype html>
 <html lang="en" data-theme="sunset"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="${e(description)}"><meta name="color-scheme" content="light dark">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>${e(title)} · RPO HUB</title><link rel="stylesheet" href="${prefix}styles.css"><link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml"><script src="${prefix}app.js" defer></script></head>
 <body data-page="${e(current)}">${header(current)}${inner}${footer(current)}</body></html>`;
 }
