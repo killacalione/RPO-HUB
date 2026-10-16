@@ -1,5 +1,25 @@
 # Current work state
 
+## Pixel-art atmosphere redesign — local implementation checkpoint — 2026-10-16
+
+Task recorded for the approved nine-theme cosmetics refresh. Scope is the existing five-page information site and curated Pages build: detailed 16-bit scenery with chunky 8-bit controls, a rich Home scene, quiet detail-page scenery, immediate accessible theme selection, and coordinated motion controls. The product facts, current F1 evidence and the S1-unstarted boundary remain authoritative.
+
+Writer: current Codex desktop coordinator/implementation engineer, one active source/document writer. A separate read-only review will be requested at the implementation checkpoint; it will not edit the checkout. Client/model route has not changed; the exact model identifier is not exposed in this session. No global machine setting changed.
+
+Source root: this repository at starting revision `9dfc8f18c89c876fccbb4fbf2ac5bafed89ee75d`; branch `feat/oasis-pixel-atmospheres`, based on clean `main`. Origin remains `https://github.com/killacalione/The-Oasis.git`. Runtime observed: Node `v25.9.0`, npm `11.12.1`, Git `2.55.0.3`, PowerShell `7.6.5`; package requires Node 24 or newer and has no dependencies.
+
+Owned files: `site/theme-registry.js`, `site/styles.css`, `site/app.js`, deletion of the superseded `site/portal-world.svg`, `scripts/build-site.mjs`, `scripts/check-foundation.mjs`, `docs/project/DESIGN_SYSTEM.md`, `docs/project/testing.md`, `VERIFY.md` and this ledger. No account, application, audio, hosted-world, online service or S1 source is in scope.
+
+Current decisions: keep the nine approved setting names and existing `sunset`, `arcade`, `meadow` IDs and session keys; derive palettes and scenes from one registry; restore the selected theme before CSS; use a native dialog and native radio inputs with a select fallback; keep selected scenes animated, previews static, and OS/hidden-tab motion suspension separate from explicit user preference. Preserve `/The-Oasis/`, CSP and the curated `dist/` output boundary; add no runtime dependency.
+
+Local implementation and browser review are complete. The generated build was exercised in isolated Chromium at 1280×720, 1440×900, 375×812 and 320×700; all nine themes were checked across five routes (45/45), all four portals and keyboard paths were exercised, the unsupported-dialog fallback was emulated, and the live reduced-motion preference changed without overwriting the saved user pause choice. A read-only review found and reported the unsupported-dialog gallery visibility gap; the gap is now fixed and asserted by the checker. REA captured Home at 1280×720 as `ev_2076c35b4b283ee3a1fd8c4bfdb4ae108e9ec5e83b0f355e190620fdc50475d7`.
+
+Remaining gaps: actual 200% browser zoom and a real hidden-tab transition could not be verified with available isolated browser controls; physical devices, alternate engines and broad assistive-technology coverage are also open. Do not claim these as passes. Public release is pending final source validation, branch push, protected PR checks/merge and Pages SHA/output-parity review. F1 remains verified; S1 is unstarted.
+
+Final sequential commands passed: `npm run check` (85 public files, seven role mirrors, five routes, nine registry themes, ID/animation and 300 KiB budget checks), `npm run build` (five pages), and `git diff --check`. Largest measured generated route bundle is 86,439 bytes. The no-dialog fallback was retested after the CSS fix: select visible, dialog gallery hidden, Snowlight Valley applied and stored, no page errors. The branch remains local/uncommitted at this checkpoint.
+
+Next concrete step: commit the validated source/docs, push the focused branch, then use protected PR checks and verify the final merged Pages release against its SHA.
+
 ## F1 foundation and release evidence — verified
 
 Task recorded 2026-10-15; release closeout completed 2026-10-16. Scope: establish The Oasis as a hub-centered community project, keep the planning/site foundation accurate, and verify protected publication. PR #6 delivered the product blueprint, F0–S5 roadmap, requirement/decision traceability, portable contributor guidance, repository/Pages branding, and the five-page pixel-art site. Its mobile follow-up fixes Home overflow and the malformed CSS selector. PR #7 updates structured status and release evidence after PR #6 went live. S1 application implementation remains unstarted.
